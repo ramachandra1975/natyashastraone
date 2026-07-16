@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nāṭyaśāstra &amp; the 108 Karaṇas as Universal Science of Affect — Part I: Doctrinal/Textual Foundations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-void:#160608;
+    --bg-panel:#1f0a0d;
+    --bg-panel-2:#2a0e12;
+    --crimson:#7a1620;
+    --crimson-bright:#a3222e;
+    --gold:#c9a24a;
+    --gold-bright:#e6c878;
+    --parchment:#ece1cc;
+    --parchment-dim:#c9bda6;
+    --ink:#efe6d4;
+    --tag-classical:#5b8c5a;
+    --tag-modern:#4a7ba6;
+    --tag-synth:#a66b4a;
+    --line:#3a1519;
+    --shadow:0 8px 30px rgba(0,0,0,.5);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:radial-gradient(ellipse at top, #250b0f 0%, var(--bg-void) 55%);
+    color:var(--ink);
+    font-family:'EB Garamond', serif;
+    font-size:19px;
+    line-height:1.75;
+  }
+  .skt{font-family:'Noto Serif Devanagari', serif;}
+  header.masthead{
+    padding:64px 24px 40px;
+    text-align:center;
+    border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg, rgba(122,22,32,.18), transparent);
+  }
+  header.masthead .eyebrow{
+    font-family:'Cinzel', serif;
+    letter-spacing:.28em;
+    font-size:13px;
+    color:var(--gold);
+    text-transform:uppercase;
+  }
+  header.masthead h1{
+    font-family:'Cinzel', serif;
+    font-weight:700;
+    font-size:clamp(28px,4vw,46px);
+    color:var(--gold-bright);
+    margin:18px auto 10px;
+    max-width:920px;
+    line-height:1.25;
+  }
+  header.masthead h2{
+    font-family:'EB Garamond', serif;
+    font-style:italic;
+    font-weight:400;
+    color:var(--parchment-dim);
+    font-size:20px;
+    max-width:760px;
+    margin:0 auto;
+  }
+  nav.series-nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    padding:26px 16px;
+    background:var(--bg-panel);
+    border-bottom:1px solid var(--line);
+    position:sticky; top:0; z-index:50;
+  }
+  nav.series-nav a{
+    font-family:'Cinzel', serif;
+    font-size:12.5px;
+    letter-spacing:.05em;
+    text-decoration:none;
+    color:var(--parchment-dim);
+    border:1px solid var(--line);
+    padding:8px 14px;
+    border-radius:3px;
+    background:var(--bg-panel-2);
+    white-space:nowrap;
+  }
+  nav.series-nav a.current{
+    color:var(--bg-void);
+    background:var(--gold-bright);
+    border-color:var(--gold-bright);
+    font-weight:600;
+  }
+  main{max-width:880px; margin:0 auto; padding:50px 24px 120px;}
+  .lede{
+    font-size:21px;
+    color:var(--parchment);
+    border-left:3px solid var(--crimson-bright);
+    padding-left:22px;
+    margin:0 0 46px;
+  }
+  section.module{margin-bottom:64px; scroll-margin-top:90px;}
+  section.module h2{
+    font-family:'Cinzel', serif;
+    color:var(--gold-bright);
+    font-size:26px;
+    border-bottom:1px solid var(--line);
+    padding-bottom:14px;
+    margin-bottom:26px;
+    display:flex; align-items:baseline; gap:12px;
+  }
+  section.module h2 .num{
+    font-size:15px; color:var(--crimson-bright); font-weight:700;
+  }
+  section.module h3{
+    font-family:'Cinzel', serif;
+    color:var(--parchment);
+    font-size:19px;
+    margin:34px 0 14px;
+    letter-spacing:.02em;
+  }
+  p{margin:0 0 18px;}
+  .verse-block{
+    background:var(--bg-panel);
+    border:1px solid var(--line);
+    border-left:3px solid var(--gold);
+    padding:20px 24px;
+    margin:20px 0;
+    border-radius:2px;
+  }
+  .verse-block .devanagari{
+    font-family:'Noto Serif Devanagari', serif;
+    font-size:21px;
+    color:var(--gold-bright);
+    margin-bottom:8px;
+  }
+  .verse-block .translit{
+    font-style:italic;
+    color:var(--parchment-dim);
+    font-size:17px;
+    margin-bottom:10px;
+  }
+  .verse-block .gloss{
+    font-size:17px;
+    color:var(--ink);
+  }
+  .verse-block .loc{
+    font-family:'Cinzel', serif;
+    font-size:11.5px;
+    letter-spacing:.06em;
+    color:var(--crimson-bright);
+    margin-top:10px;
+    text-transform:uppercase;
+  }
+  .tag{
+    display:inline-block;
+    font-family:'Cinzel', serif;
+    font-size:10.5px;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    padding:3px 9px;
+    border-radius:2px;
+    margin:0 6px 10px 0;
+    color:#0f0f0f;
+  }
+  .tag.classical{background:var(--tag-classical); color:#eafbe8;}
+  .tag.modern{background:var(--tag-modern); color:#e8f2fb;}
+  .tag.synthesis{background:var(--tag-synth); color:#fbeee5;}
+  .rq-box{
+    background:var(--bg-panel-2);
+    border:1px solid var(--crimson);
+    border-radius:4px;
+    padding:22px 26px;
+    margin:22px 0;
+  }
+  .rq-box .rq-id{
+    font-family:'Cinzel', serif;
+    color:var(--gold-bright);
+    font-size:14px;
+    letter-spacing:.08em;
+    margin-bottom:8px;
+  }
+  .rq-box p{margin-bottom:10px; font-size:18px;}
+  .rq-box .rq-status{
+    font-size:14px; color:var(--parchment-dim); font-style:italic;
+  }
+  table.compare{
+    width:100%; border-collapse:collapse; margin:24px 0; font-size:17px;
+  }
+  table.compare th, table.compare td{
+    border:1px solid var(--line); padding:12px 14px; text-align:left; vertical-align:top;
+  }
+  table.compare th{
+    background:var(--bg-panel-2); color:var(--gold); font-family:'Cinzel', serif; font-size:13px; letter-spacing:.04em;
+  }
+  ol.karana-list{padding-left:24px;}
+  ol.karana-list li{margin-bottom:10px;}
+  .footnote-ref{color:var(--gold); font-size:13px; vertical-align:super; cursor:default;}
+  footer.notes{
+    max-width:880px; margin:0 auto; padding:40px 24px 100px;
+    border-top:1px solid var(--line);
+  }
+  footer.notes h2{
+    font-family:'Cinzel', serif; color:var(--gold-bright); font-size:22px;
+  }
+  footer.notes ol{padding-left:22px; font-size:16px; color:var(--parchment-dim);}
+  footer.notes li{margin-bottom:12px;}
+  .callout{
+    background:linear-gradient(135deg, rgba(122,22,32,.15), rgba(201,162,74,.06));
+    border:1px solid var(--gold);
+    border-radius:4px;
+    padding:22px 26px;
+    margin:26px 0;
+    font-size:18px;
+  }
+  .callout .label{
+    font-family:'Cinzel', serif; color:var(--gold-bright); font-size:12.5px;
+    letter-spacing:.08em; text-transform:uppercase; margin-bottom:8px;
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="eyebrow">Cultural Musings · Series Extension · 108 Karaṇas / VAK</div>
+  <h1>Nāṭyaśāstra and the 108 Karaṇas as a Universal Science of Emotional and Intelligence Quotient</h1>
+  <h2>A Six-Angle White Paper on Why a Text Written for All Humanity Became the Preserve of the Few</h2>
+</header>
+
+<nav class="series-nav">
+  <a href="#" class="current">I · Doctrinal / Textual</a>
+  <a href="#">II · Historical Transmission</a>
+  <a href="#">III · Psychological / EQ Framework</a>
+  <a href="#">IV · Neuroscientific / Somatic</a>
+  <a href="#">V · Educational / Pedagogical Loss</a>
+  <a href="#">VI · Epistemic Access Barrier</a>
+</nav>
+
+<main>
+
+<p class="lede">
+This is Part I of a six-part white paper series examining a single claim: that the Nāṭyaśāstra and its
+108 Karaṇas constitute the foundational human science of emotional and intelligence quotient — not a
+performing-arts manual, but a general theory of affect, cognition, and embodied intelligence that
+Bharata explicitly addressed to <em>all four varṇas</em>, and which has since narrowed into specialist
+property of the fine-arts community. Part I stays inside the text. Before we can explain how this
+knowledge was lost to common human understanding (Parts II–VI), we have to establish, with textual
+precision, what the knowledge actually claimed to be at the moment of its own composition. This module
+does not argue from neuroscience or pedagogy — it argues from the Nāṭyaśāstra's own self-description,
+verse by verse, chapter by chapter, using the classical commentarial tradition (principally Abhinavagupta's
+Abhinavabhāratī) as the control on interpretation.
+</p>
+
+<div class="callout">
+  <div class="label">On the tri-tier evidentiary method used throughout this series</div>
+  <span class="tag classical">Classical Attested</span> — directly stated in the Nāṭyaśāstra, its major
+  commentaries (Abhinavabhāratī), or closely allied śāstric texts (Vākyapadīya, Śiva Sūtra, Sāṅgīta
+  Ratnākara) with textual citation.
+  <span class="tag modern">Modern Scholarship</span> — supported by peer-reviewed Indology, performance
+  studies, or aesthetics scholarship (Kapila Vatsyayan, Bharata Iyer, David Gitomer, Sheldon Pollock,
+  Edwin Gerow, Padma Subrahmanyam's kinetic reconstructions).
+  <span class="tag synthesis">AI Synthesis</span> — an interpretive bridge proposed in this white paper
+  connecting classical material to the modern EQ/neuroscience frame; flagged explicitly as such and not
+  to be mistaken for either classical doctrine or established secondary scholarship.
+</div>
+
+<section class="module" id="s1">
+  <h2><span class="num">01</span> The Opening Claim: Nāṭya as the Fifth Veda for All Varṇas</h2>
+
+  <p>
+    The argument that Nāṭyaśāstra is a specialist manual for actors and dancers cannot survive contact
+    with its own first chapter. Bharata does not present nāṭya as a craft guild's trade secret. He presents
+    it as a deliberate fifth Veda, composed because the existing four — Ṛg, Yajur, Sāma, Atharva — were,
+    by Brahmā's own reported reasoning, inaccessible to the śūdra and to those disqualified from Vedic
+    study by birth or gender. Nāṭya was assembled precisely to close that access gap: a Veda built from
+    elements of all four, deliverable to everyone regardless of varṇa, through the sensory register of
+    watching and feeling rather than the register of ritual recitation.
+  </p>
+
+  <div class="verse-block">
+    <div class="devanagari skt">न तेऽधिकाराः वेदानां श्रोतुं शूद्राश्च योषितः । ...इति पञ्चमवेदस्तु नाट्यवेदो विधीयते ॥</div>
+    <div class="translit">(paraphrase of the narrative frame, Nāṭyaśāstra Adhyāya 1, on the origin of the fifth Veda)</div>
+    <div class="gloss">
+      Bharata frames the origin story as a direct response to an access problem: the four Vedas were
+      closed to śūdras and to women, and Brahmā's remedy was not to reform access to the existing four
+      but to construct a fifth register of transmission — nāṭya — drawing pāṭhya (recitation) from the
+      Ṛgveda, gīta (song) from the Sāmaveda, abhinaya (enactment) from the Yajurveda, and rasa (aesthetic
+      emotion) from the Atharvaveda, so that dharma, artha, and human conduct could reach an audience the
+      existing sacred curriculum structurally excluded.
+    </div>
+    <div class="loc">Nāṭyaśāstra 1.11–1.15, narrative frame · commentarial gloss via Abhinavabhāratī</div>
+  </div>
+  <span class="tag classical">Classical Attested</span>
+
+  <p>
+    This is worth sitting with, because it inverts the modern assumption entirely. The contemporary
+    situation — where Nāṭyaśāstra is understood by "individuals in the field of fine arts and culture"
+    and closed to common human existence — is the exact mirror image of the text's founding purpose.
+    Bharata did not write a text for specialists to guard. He wrote a text explicitly designed to be
+    the <em>most</em> accessible transmission channel available in the Vedic corpus, because it worked
+    through watching, feeling, and recognizing emotion rather than through Sanskrit ritual literacy.
+    The present-day inaccessibility of the Nāṭyaśāstra is not an inheritance from antiquity. It is a
+    later historical development — the subject of Part II — layered on top of a text that begins by
+    naming universal accessibility as its reason for existing.
+  </p>
+
+  <h3>0.1 The Extraction Narrative in Full: What Was Taken From Each Veda, and Why It Matters</h3>
+  <p>
+    The bare fact that nāṭya draws from all four Vedas is often noted; the specific allocation is less
+    often examined, and the allocation itself carries argumentative weight for this white paper's central
+    claim. Bharata's narrative has Brahmā extract pāṭhya (recited text/word) from the Ṛgveda, gīta (song/
+    melody) from the Sāmaveda, abhinaya (enactment/embodied representation) from the Yajurveda, and rasa
+    (aesthetic emotion) from the Atharvaveda. This is not an arbitrary fourfold division dressed up in
+    Vedic language for legitimacy — each extraction tracks a genuine functional emphasis already present
+    in the source Veda as classical tradition understood it: the Ṛgveda as the Veda of verbal hymnody, the
+    Sāmaveda as the Veda most closely associated with musical/melodic elaboration of verbal material, the
+    Yajurveda as the Veda most concerned with correctly performed ritual action (karma, gesture, procedure
+    — the root of abhinaya's connection to it), and the Atharvaveda as the Veda most concerned with the
+    practical, affect-laden, world-directed concerns of ordinary life (healing, protection, desire,
+    aversion — the affective material rasa draws on). The fifth Veda is therefore not simply "a mixture"
+    but a deliberately engineered synthesis, each borrowed element selected because it was already the
+    strongest expressive resource within its source text, recombined into something none of the four
+    original Vedas alone could deliver: an integrated word-melody-gesture-emotion transmission channel.
+  </p>
+  <p>
+    This compositional logic matters for the "science" framing this series is testing throughout. A text
+    built by identifying the specific functional strength of four existing authoritative sources and
+    engineering their combination toward a stated practical goal (universal accessibility of dharmic and
+    emotional instruction) displays exactly the kind of deliberate, goal-directed systematic design this
+    series associates with śāstra-as-science rather than śāstra-as-mythology-for-its-own-sake. The
+    mythological register of the narrative (Brahmā, the sages' request, the deities' involvement in
+    Adhyāya 1's fuller account) is the genre's conventional authority-packaging, discussed directly in
+    Section 7 below; the compositional logic packaged inside that mythological register is where the
+    text's actual systematic ambition shows through.
+  </p>
+
+  <h3>1.1 Sāmānya Dharma: The General, Not the Specialist, Register</h3>
+  <p>
+    Later in the text, Bharata makes a distinction that modern readers of Nāṭyaśāstra-as-dance-manual
+    tend to flatten: the difference between <em>lokadharmī</em> (representation modeled on ordinary
+    worldly behavior) and <em>nāṭyadharmī</em> (stylized theatrical convention). The existence of this
+    binary is itself evidence against a narrow reading. Bharata is not building a closed symbolic system
+    legible only to initiates; he is building a system whose stylized register (nāṭyadharmī) is
+    explicitly calibrated against, and answerable to, ordinary human emotional behavior (lokadharmī).
+    The karaṇas — the 108 unit-movements catalogued in Adhyāya 4 — sit at the hinge between these two:
+    they are stylizations, yes, but stylizations whose entire claim to validity is that they compress
+    and intensify patterns of bodily-emotional expression that any human observer already recognizes
+    from lived experience, not patterns invented for insiders.
+  </p>
+
+  <h3>1.2 The Limits of the Universalist Claim — What the Text Does Not Say</h3>
+  <p>
+    Intellectual honesty requires stating what Section 1.1's universalist reading does not establish, so
+    that the argument does not overreach in the direction its own author would resist. Bharata's fifth-Veda
+    narrative addresses access to <em>reception</em> — who may watch, hear, and be morally/emotionally
+    instructed by nāṭya — not necessarily access to <em>production</em>, meaning training as a performer,
+    which the text elsewhere discusses in terms suggesting inherited or apprenticed transmission within
+    identifiable performing lineages (the nāṭyācārya-śiṣya relationship described in Adhyāya 35 and
+    scattered references throughout). A universalist claim about spectatorship is not automatically a
+    universalist claim about pedagogy. This distinction matters enormously for the present white paper
+    series, because the contemporary situation this series is responding to is precisely a pedagogical
+    one — general human populations do not receive karaṇa/rasa literacy as part of ordinary education —
+    and it would be a category error to treat Bharata's spectator-access claim as though it settled the
+    pedagogy-access question in advance. It does not. It only establishes that the founding conception of
+    <em>who benefits</em> from the system was maximally broad, which is a necessary but not sufficient
+    condition for the stronger claim this series is building toward across all six parts.
+  </p>
+  <p>
+    A second limit concerns the term "varṇa" itself. Bharata's narrative addresses śūdra and female
+    exclusion from Vedic study specifically; it does not constitute a general critique of varṇa
+    hierarchy as a social institution, nor does the text elsewhere dismantle caste-inflected assumptions
+    about who is fit to perform versus who is fit to merely watch. Modern readers sympathetic to a fully
+    egalitarian reading of the text should resist importing contemporary egalitarian commitments onto a
+    text operating within, and largely accepting, the social stratification of its own era. What can be
+    claimed with textual security is narrower and, this series argues, still significant: an
+    access-expansion mechanism was built into the foundational justification for nāṭya's existence,
+    regardless of how imperfectly or unevenly that expansion was realized in the social practice that
+    followed — which is again the historical question reserved for Part II.
+  </p>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 01</div>
+    <p>
+      If nāṭyadharmī (stylized convention) is doctrinally derivative of lokadharmī (ordinary worldly
+      behavior), does this establish a testable claim that karaṇa vocabulary should be decodable, at
+      least partially, by observers with zero training in classical dance — i.e., that recognition of
+      the underlying emotional state should survive stylization? This is directly testable via
+      cross-cultural emotion-recognition experiments (see Part III/IV) but is first a textual question:
+      does Bharata anywhere claim or imply an untrained-audience recognizability threshold for rasa
+      transmission, distinct from the technical correctness the performer must achieve?
+    </p>
+    <div class="rq-status">Status: open. Adhyāya 7's rasa-sūtra discussion implies audience-side
+    recognition is the entire mechanism of rasa (see Section 3 below), which weighs toward "yes," but
+    no verse explicitly quantifies a recognizability threshold independent of training. Requires
+    further commentarial cross-check against Abhinavagupta's sahṛdaya (sensitive spectator) doctrine.</div>
+  </div>
+
+</section>
+
+<section class="module" id="s2">
+  <h2><span class="num">02</span> The Rasa-Sūtra: A Formal Model of How Emotion Becomes Knowledge</h2>
+
+  <p>
+    If the 108 Karaṇas are the kinetic vocabulary, the rasa-sūtra in Adhyāya 6 is the theory of mind
+    that explains why the vocabulary works. This is the single most important textual anchor for the
+    claim that Nāṭyaśāstra is an EQ text rather than a performance manual, because the rasa-sūtra is,
+    structurally, a causal model of emotional transmission between two nervous systems — the performer's
+    and the spectator's — mediated entirely through controlled, legible physical signal.
+  </p>
+
+  <div class="verse-block">
+    <div class="devanagari skt">विभावानुभावव्यभिचारिसंयोगाद्रसनिष्पत्तिः ॥</div>
+    <div class="translit">vibhāvānubhāva-vyabhicāri-saṃyogād rasa-niṣpattiḥ</div>
+    <div class="gloss">
+      Rasa arises from the combination (saṃyoga) of vibhāva (the determinants — causal/contextual
+      triggers of emotion), anubhāva (the consequents — the visible physical/behavioral effects of
+      emotion), and vyabhicāribhāva (the transitory or ancillary emotional states that color the
+      dominant one). This is Bharata's single most quoted formula and the structural core of Indian
+      aesthetic theory.
+    </div>
+    <div class="loc">Nāṭyaśāstra 6.31 (rasa-sūtra)</div>
+  </div>
+  <span class="tag classical">Classical Attested</span>
+
+  <p>
+    Read as an EQ framework rather than a dramaturgical rule, the rasa-sūtra is doing something modern
+    affective science took until the twentieth century to formalize independently: it separates the
+    <strong>cause</strong> of an emotion (vibhāva — what in the situation triggers the state),
+    the <strong>observable expression</strong> of an emotion (anubhāva — what the body does once the
+    state is present), and the <strong>modulating undertones</strong> that keep any single emotion from
+    being a flat, cartoonish monolith (vyabhicāribhāva — the 33 transitory states like glāni,
+    śaṅkā, asūyā, that shade and complicate the eight or nine sthāyibhāvas). This is a componential
+    theory of emotion, not a list of expressions to imitate. A componential theory is precisely what
+    contemporary emotional intelligence frameworks (Section 4 below) try to reconstruct from
+    psychology's much shorter empirical history.
+  </p>
+
+  <h3>2.1 The Eight (Later Nine) Sthāyibhāvas as a Closed Taxonomy</h3>
+  <p>
+    Bharata's stable emotional states (sthāyibhāva) — rati (love/pleasure), hāsa (mirth), śoka (sorrow),
+    krodha (anger), utsāha (energy/heroism), bhaya (fear), jugupsā (disgust), vismaya (wonder) — map to
+    the eight rasas: śṛṅgāra, hāsya, karuṇa, raudra, vīra, bhayānaka, bībhatsa, adbhuta. Śāntarasa
+    (peace, grounded in the sthāyibhāva of nirveda, or dispassion) is the ninth, whose classical status
+    is itself debated between Bharata's original eight-rasa system and Abhinavagupta's later insistence
+    on nine as the completion of the taxonomy.
+  </p>
+
+  <table class="compare">
+    <tr><th>Sthāyibhāva (stable state)</th><th>Rasa (aesthetic emotion)</th><th>Nearest modern affective term</th></tr>
+    <tr><td>Rati</td><td>Śṛṅgāra</td><td>Attachment / erotic-romantic affect</td></tr>
+    <tr><td>Hāsa</td><td>Hāsya</td><td>Mirth / comic amusement</td></tr>
+    <tr><td>Śoka</td><td>Karuṇa</td><td>Grief / compassion-sorrow</td></tr>
+    <tr><td>Krodha</td><td>Raudra</td><td>Anger / rage</td></tr>
+    <tr><td>Utsāha</td><td>Vīra</td><td>Heroic energy / determination</td></tr>
+    <tr><td>Bhaya</td><td>Bhayānaka</td><td>Fear / dread</td></tr>
+    <tr><td>Jugupsā</td><td>Bībhatsa</td><td>Disgust</td></tr>
+    <tr><td>Vismaya</td><td>Adbhuta</td><td>Wonder / astonishment</td></tr>
+    <tr><td>Nirveda (later addition)</td><td>Śānta</td><td>Equanimity / dispassion</td></tr>
+  </table>
+  <span class="tag classical">Classical Attested</span>
+  <span class="tag synthesis">AI Synthesis (rightmost column only)</span>
+
+  <p>
+    The "nearest modern affective term" column is explicitly flagged as synthesis, not equivalence.
+    Basic-emotion theory in modern psychology (Ekman's six, Plutchik's eight) is a superficially similar
+    closed taxonomy, and the resemblance has tempted more than one comparative scholar toward a
+    one-to-one mapping. That temptation should be resisted at the textual level: Bharata's taxonomy is
+    not a claim about universal facial expression categories (Ekman's empirical target); it is a claim
+    about which emotional states are stable and dominant enough to organize an entire dramatic
+    composition around, which is a compositional-aesthetic criterion, not a purely biological one. Where
+    the two systems genuinely converge and diverge is a question for Part III.
+  </p>
+
+  <h3>2.2 The Eight-versus-Nine Debate as Evidence of a Living, Self-Correcting System</h3>
+  <p>
+    Bharata's own text enumerates eight rasas. Śāntarasa's admission as a ninth is a post-Bharata
+    development, most forcefully argued by Abhinavagupta against earlier commentators (including
+    Śaṅkuka and Bhaṭṭalollaṭa, whose positions survive mainly through Abhinavagupta's citations and
+    refutations rather than independently) who resisted the addition on the grounds that śānta, being a
+    state of dispassion, cannot function as a rasa in the same active sense as the other eight, each of
+    which corresponds to an engaged, energized emotional state. This internal debate is worth foregrounding
+    for the present argument because it demonstrates something the "ancient closed text" framing tends to
+    obscure: the rasa taxonomy was not treated by the tradition itself as fixed revelation immune to
+    revision. It was treated as a working theoretical model, open to expansion when a commentator could
+    argue persuasively that the existing categories under-described genuine human aesthetic experience.
+    This is closer to the self-correcting posture of an active research tradition than to the posture of
+    closed scriptural doctrine — a distinction with direct bearing on how this white paper series
+    characterizes Nāṭyaśāstra's epistemic status throughout.
+  </p>
+
+  <h3>2.3 The Thirty-Three Vyabhicāribhāvas as a High-Resolution Emotional Lexicon</h3>
+  <p>
+    Adhyāya 7 lists all thirty-three vyabhicāribhāvas by name, and the completeness of this list is
+    itself an argument for the text's claim to be doing systematic rather than illustrative work. A
+    partial sample, chosen to show the range of granularity: nirveda (dejection/world-weariness), glāni
+    (physical/emotional weariness, distinct from nirveda's more existential register), śaṅkā
+    (apprehension/suspicion), asūyā (envy that specifically begrudges another's virtue rather than merely
+    their possessions), mada (intoxication/pride), śrama (fatigue from exertion), ālasya (indolence,
+    distinct from śrama in being unforced), dainya (destitution/humility), cintā (anxious rumination),
+    moha (delusion/confusion), smṛti (recollection, treated here as an emotionally-colored cognitive
+    event rather than neutral memory retrieval), dhṛti (steadiness/fortitude), vrīḍā (shame/modesty),
+    capalatā (fickleness/agitation), harṣa (joy/exhilaration, distinct from the sthāyibhāva rati),
+    āvega (agitation/perturbation, often under sudden threat), jaḍatā (stupor/inertness), garva (arrogance,
+    distinct from mada in being socially rather than substance-triggered), viṣāda (despondency), autsukya
+    (longing/eagerness), nidrā (sleep, as a dramatically representable state), apasmāra (epileptic
+    fit/seizure, a startling inclusion that shows the taxonomy's willingness to catalogue pathological as
+    well as ordinary states), supta (dreaming), vibodha (waking/awakening), amarṣa (indignation, a
+    controlled variant distinct from krodha's fuller rage), avahitthā (concealment/dissimulation of true
+    feeling — dramatically essential wherever a character must appear to feel one thing while the
+    audience, via sāttvika leakage, is shown they feel another), ugratā (ferocity/violence), mati
+    (conviction/judgment), vyādhi (sickness), unmāda (madness/insanity), maraṇa (death, as a
+    representable dramatic state), trāsa (fright, distinct from bhaya's more sustained fear-sthāyibhāva),
+    and vitarka (deliberation/conjecture).
+  </p>
+  <p>
+    Two features of this list deserve emphasis. First, several entries name states that are not
+    emotions in the narrow modern sense at all but cognitive-behavioral conditions (nidrā/sleep,
+    apasmāra/seizure, unmāda/madness, maraṇa/death) — indicating that Bharata's category of
+    "vyabhicāribhāva" is broader than "emotion" as contemporary psychology bounds the term; it is closer
+    to "any transient psychophysical state relevant to dramatic representation of a person." Second, the
+    list contains multiple near-synonyms deliberately kept distinct by context and cause rather than
+    collapsed together (glāni versus śrama versus ālasya, all fatigue-adjacent but triggered and
+    expressed differently; mada versus garva, both pride-adjacent but sourced differently) — a
+    lexicographic precision that exceeds, item for item, most standard modern emotion inventories
+    referenced in RQ03 above.
+  </p>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 02</div>
+    <p>
+      Bharata's sthāyibhāva/vyabhicāribhāva distinction pre-dates, by roughly two millennia, the modern
+      psychological distinction between primary/basic emotions and secondary/complex or blended emotions.
+      Is this convergence evidence of an independently derived, empirically grounded taxonomy of human
+      affect — arrived at through centuries of performance observation rather than laboratory method —
+      or is it better explained as a compositional/dramaturgical convenience that happens to resemble a
+      psychological taxonomy without being one?
+    </p>
+    <div class="rq-status">Status: open, central to the entire six-part series. This is the fulcrum
+    question on which the "Nāṭyaśāstra as EQ science" claim either holds or reduces to metaphor.</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 03</div>
+    <p>
+      The 33 vyabhicāribhāvas include highly specific transitional states — glāni (weariness/languor),
+      śaṅkā (apprehension), asūyā (envy/intolerance), avahitthā (dissimulation/concealment of true
+      feeling) — several of which have no single-word modern psychological equivalent and require
+      compound description in English. Does the granularity of this list exceed the granularity of
+      standard modern emotion inventories (e.g. the Geneva Emotion Wheel, PANAS), and if so, what does
+      that imply about the resolution of Bharata's observational method relative to modern self-report
+      instruments?
+    </p>
+    <div class="rq-status">Status: open. Requires direct lexical comparison, planned for Part III.</div>
+  </div>
+
+  <h3>2.4 The King-and-Retinue Metaphor: Why One Emotion Must Dominate</h3>
+  <p>
+    Bharata and the later tradition frequently describe the relationship between a sthāyibhāva and its
+    accompanying vyabhicāribhāvas using a political metaphor: the sthāyibhāva functions as a king
+    (rājan), and the vyabhicāribhāvas as his retinue or courtiers (parivāra) — present, contributing
+    color and complexity, but never displacing the central authority of the dominant state. A
+    composition that allowed a vyabhicāribhāva to overwhelm or supplant its governing sthāyibhāva would,
+    in this framework, be structurally incoherent — the dramaturgical equivalent of a court where a
+    minister has usurped the throne. This metaphor does real theoretical work beyond ornamental
+    illustration: it specifies a hierarchy-preservation constraint on emotional composition that has a
+    direct modern analogue in the idea of a "dominant affect" or "mood" organizing a more complex,
+    momentarily shifting emotional field around it — you can be anxious, wry, and nostalgic within a
+    single hour while an overarching grief remains the organizing state of that hour, in something like
+    the way a piece of music can modulate through several keys while a tonic center continues to govern
+    the listener's sense of where the music is "at home."
+  </p>
+  <p>
+    The metaphor also clarifies why the text bothers to enumerate thirty-three vyabhicāribhāvas but only
+    eight or nine sthāyibhāvas: the asymmetry is not an oversight but a structural necessity of the
+    king-retinue model itself. A retinue, by definition, is large and various; a throne, by definition,
+    is singular at any given moment. The compositional discipline Bharata is teaching — build every
+    dramatic unit around one clearly dominant sthāyibhāva, however many transitory states pass through
+    it — is, read through this lens, a discipline about maintaining emotional legibility. A performance
+    or, by extension, an emotional communication of any kind that fails to establish a clear dominant
+    state amid its complexity risks becoming unreadable to its receiver, no matter how rich its
+    constituent parts.
+  </p>
+
+</section>
+
+<section class="module" id="s3">
+  <h2><span class="num">03</span> The Sahṛdaya: Rasa as a Two-Body Problem, Not a Performer's Skill</h2>
+
+  <p>
+    A common misreading treats rasa as something the actor produces, full stop — a performance quality,
+    like skill or grace. Abhinavagupta's decisive contribution to the tradition, articulated in the
+    Abhinavabhāratī, is to relocate rasa's actual site of completion away from the performer's body and
+    into the spectator's consciousness. Rasa is not <em>in</em> the actor. It is not even, strictly,
+    <em>in</em> the performance. It is <em>niṣpanna</em> — brought into completed existence — only in
+    the sahṛdaya, the spectator whose heart (hṛdaya) is "with" (sa-) the performance: someone whose own
+    prior aesthetic-emotional sensitivity is sufficiently cultivated to resonate with, rather than merely
+    observe, the vibhāva-anubhāva-vyabhicāribhāva configuration being presented.
+  </p>
+
+  <div class="callout">
+    <div class="label">Why this matters for the EQ claim specifically</div>
+    This is the textual point at which Nāṭyaśāstra stops being describable as an actor-training system
+    and becomes, unambiguously, a theory of interpersonal emotional transmission — which is the exact
+    definitional territory of emotional intelligence as the term is used today: the capacity to read,
+    process, and appropriately respond to emotional signal generated by another person. Abhinavagupta is
+    not describing a performer's expressive competence in isolation. He is describing a two-body circuit:
+    signal generation (the actor's calibrated anubhāva) and signal reception (the sahṛdaya's cultivated
+    capacity to correctly identify and resonate with that signal). Both halves of that circuit are
+    trainable, and the text treats both as trainable — which is the single strongest textual basis in
+    this entire white paper for calling Nāṭyaśāstra an EQ curriculum rather than a theatre curriculum
+    that happens to involve emotion.
+  </div>
+  <span class="tag synthesis">AI Synthesis — framing; underlying textual claims are Classical Attested</span>
+
+  <h3>3.1 Sādhāraṇīkaraṇa: Generalization as the Mechanism of Universal Address</h3>
+  <p>
+    Bhaṭṭanāyaka's earlier concept of sādhāraṇīkaraṇa (generalization/universalization), which
+    Abhinavagupta absorbs and refines, explains the mechanism by which a spectator's private emotional
+    memory becomes available for aesthetic resonance without being confused with ordinary personal
+    emotion (which the tradition calls śoka, bhaya, etc. in their raw, non-aesthetic form — distinct
+    from karuṇa-rasa or bhayānaka-rasa, their aestheticized counterparts). The vibhāvas presented on
+    stage are deliberately de-particularized — not "my mother's grief" but grief-in-general, triggered
+    by causal circumstances general enough that any spectator's own store of grief-adjacent memory can
+    be activated and refined into rasa, without the spectator being made to relive a specific personal
+    wound.
+  </p>
+
+  <p>
+    This is, again, directly relevant to the access question this white paper series is built around.
+    Sādhāraṇīkaraṇa presupposes that the emotional material being generalized is <em>universal human
+    material</em> — available in principle to any spectator regardless of caste, training, or
+    literacy, because it is built from lived affective experience rather than specialist knowledge. The
+    mechanism only works if ordinary humans carry the emotional substrate the performance activates.
+    The text's implicit anthropology is egalitarian at the level of emotional capacity even where
+    classical Indian society was not egalitarian at the level of formal education — a tension that
+    becomes central in Part II.
+  </p>
+
+  <h3>3.2 Rasa Is Not Raw Emotion: The Aesthetic-Distance Requirement</h3>
+  <p>
+    A further precision the tradition insists on, and which the EQ-framing of this white paper must
+    respect rather than blur, is the distinction between rasa (aestheticized, generalized emotional
+    experience) and the raw, particular emotions of ordinary life (loka-sthita bhāva). Watching karuṇa-rasa
+    performed is categorically different from experiencing personal grief; the spectator's pleasure in
+    even the sorrowful and fearful rasas (karuṇa, bhayānaka, raudra, bībhatsa) — a pleasure the tradition
+    insists is real and is part of what makes rasa rasa — would be inexplicable, even perverse, if rasa
+    were simply raw emotion re-triggered without transformation. The Sanskrit aesthetic tradition's
+    answer, developed most fully by Abhinavagupta, is that sādhāraṇīkaraṇa (introduced above) performs
+    exactly the transformation required: it strips the vibhāva of its practical, self-interested
+    particularity (this is not a threat to <em>me</em>, this is not <em>my</em> grief) while preserving
+    its full emotional charge, producing a state the tradition calls camatkāra — aesthetic relish or
+    wonder — that rides on top of, but is not identical to, the base emotion being aestheticized.
+  </p>
+  <p>
+    This distinction is the reason this white paper series is careful, throughout, to frame the
+    Nāṭyaśāstra's contribution to EQ theory as a theory of emotional <em>recognition, transmission, and
+    regulation</em> rather than a theory of emotional <em>induction</em> in the raw, therapeutic sense.
+    A modern EQ curriculum built on karaṇa/rasa principles would not be teaching people to feel more
+    intensely in an unregulated way; if anything, the aesthetic-distance mechanism the tradition
+    describes is a regulation technology — a way of engaging fully with an emotional state's full
+    signal while remaining, by virtue of the generalization process, in a position of reflective
+    rather than reactive relationship to it. That reframing — rasa as regulated engagement rather than
+    raw induction — is the single most defensible bridge this series can build toward modern affect
+    regulation theory in Part III, and it is flagged here as a load-bearing claim for that later
+    argument.
+  </p>
+
+</section>
+
+<section class="module" id="s4">
+  <h2><span class="num">04</span> The 108 Karaṇas: Adhyāya 4, and Movement as Compressed Cognition</h2>
+
+  <p>
+    Adhyāya 4 of the Nāṭyaśāstra catalogues the 108 karaṇas — combinations of a single hand gesture
+    (nṛtta-hasta) with a single foot/leg position (sthāna or cārī) executed as one indivisible kinetic
+    unit. Bharata frames their origin narratively as Śiva's own dance, tāṇḍava, transmitted through the
+    sage Taṇḍu — which is why the karaṇas are sometimes called tāṇḍava-lakṣaṇa. Structurally, each
+    karaṇa is a minimal unit: not yet a phrase or a narrative gesture, but the smallest combinable block
+    from which aṅgahāras (sequences of karaṇas) and ultimately full choreographic passages are built.
+  </p>
+
+  <div class="verse-block">
+    <div class="devanagari skt">हस्तपादसमायोगे नृत्तस्य करणं भवेत् ॥</div>
+    <div class="translit">hasta-pāda-samāyoge nṛttasya karaṇaṃ bhavet</div>
+    <div class="gloss">
+      A karaṇa comes into being through the conjunction (samāyoga) of hand and foot in dance — the
+      minimal definitional unit of the entire kinetic system, from which all higher combinatory
+      structures (aṅgahāra, recakas) are assembled.
+    </div>
+    <div class="loc">Nāṭyaśāstra 4.30 (definitional verse, paraphrase per standard editions)</div>
+  </div>
+  <span class="tag classical">Classical Attested</span>
+
+  <h3>4.1 Combinatorics as the Structural Signature of a General Cognitive System</h3>
+  <p>
+    The number 108 is not arbitrary within the text's own logic, nor is it merely numerologically
+    convenient (though the number's resonance with 108 as a broadly auspicious count across Indic ritual
+    culture — 108 beads on a mālā, 108 Upaniṣads in some enumerations, 108 marma points in Āyurveda — is
+    itself a subject Module XI of the 108 Karaṇas series treats separately). What matters for the
+    doctrinal argument here is that 108 is generated <em>combinatorially</em> from a much smaller base
+    vocabulary of hand and foot positions, following the same generative logic that governs Sanskrit
+    grammar itself: a finite, minimal inventory of primitive units (varṇas in phonology, hastas and
+    sthānas in kinetics) combined by rule into a large but bounded set of well-formed outputs. This
+    structural parallel — a small closed inventory generating a large closed output set through
+    combinatory rule — is the same architecture Pāṇini uses for language, and it is not a coincidence
+    that both systems emerge from the same intellectual culture and the same underlying commitment to
+    treating expressive systems as rule-governed rather than arbitrary.
+  </p>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 04</div>
+    <p>
+      Given the combinatorial architecture shared between Pāṇinian phonological generation and the
+      108-karaṇa kinetic system, is there a demonstrable common generative grammar underlying both — a
+      shared Indic theory of "meaning through minimal-unit combination" that predates and structurally
+      unifies vāk (speech) and śarīra (embodied movement) as two surface realizations of one deeper
+      cognitive architecture? Or is the resemblance a retrospective pattern the modern analyst is
+      imposing, with the historical genesis of each system being independent and only superficially
+      similar in outward structure?
+    </p>
+    <div class="rq-status">Status: open, and explicitly flagged as the highest-risk claim in this module
+    — the temptation toward false unification between vāk-śāstra and karaṇa-śāstra is strong and must be
+    resisted without textual evidence of Bharata or a commentator explicitly drawing this connection.
+    No such explicit textual connection has yet been located; until it is, this remains speculative
+    synthesis, not classical doctrine.</div>
+  </div>
+
+  <h3>4.1a The Aṅgahāra: From Minimal Unit to Combinatorial Phrase</h3>
+  <p>
+    A single karaṇa is not yet meaningful in performance the way a single phoneme is not yet meaningful
+    in speech. Bharata's text is explicit that karaṇas combine into aṅgahāras — sequences the
+    Nāṭyaśāstra enumerates at thirty-two, each built from a specified run of individual karaṇas linked
+    by transitional recakas (rotational or circular connecting movements of the limbs, neck, or waist
+    that Adhyāya 4 catalogues separately as a four-part system: pāda-recaka, kaṭi-recaka, hasta-recaka,
+    and grīvā-recaka). This three-tier architecture — recaka (connector) below the karaṇa (minimal unit),
+    aṅgahāra (phrase) above it — is the closest kinetic analogue available in the classical corpus to
+    the phoneme/morpheme/word hierarchy in Pāṇinian grammar, and it is worth stating precisely why the
+    analogy holds structurally rather than just impressionistically:
+  </p>
+  <table class="compare">
+    <tr><th>Linguistic tier</th><th>Function</th><th>Kinetic tier</th><th>Function</th></tr>
+    <tr><td>Varṇa (phoneme)</td><td>Smallest meaningless sound unit</td><td>Hasta / Sthāna (hand/foot position)</td><td>Smallest positional element, meaningless alone</td></tr>
+    <tr><td>—</td><td>—</td><td>Recaka (connector)</td><td>Transitional linking movement, itself non-signifying</td></tr>
+    <tr><td>Pada (word)</td><td>Minimal meaningful unit</td><td>Karaṇa</td><td>Minimal combinable dance unit (hasta+sthāna conjunction)</td></tr>
+    <tr><td>Vākya (sentence)</td><td>Composed meaning-bearing sequence</td><td>Aṅgahāra</td><td>Composed sequence of karaṇas bearing dramatic/emotional context</td></tr>
+  </table>
+  <span class="tag synthesis">AI Synthesis — the table's structural mapping; the underlying Sanskrit terminology and tier counts (32 aṅgahāras, four recaka types) are Classical Attested</span>
+
+  <p>
+    The caution flagged already in RQ04 applies with full force here: Bharata himself never states this
+    mapping. What can be said with textual confidence, short of asserting a unified grammar, is narrower
+    but still significant — both systems independently arrived at a tiered, combinatorial, rule-bound
+    architecture for generating a large expressive repertoire from a small closed inventory, and both
+    systems emerged from a shared intellectual milieu that had already, by Bharata's era, produced
+    Pāṇini's Aṣṭādhyāyī as the reigning model of what a rigorous generative system should look like. It
+    would be more surprising if the architects of a formal kinetic-dramatic system had built something
+    structurally unlike the dominant formal-linguistic model of their own intellectual culture than if
+    they had, consciously or not, absorbed its logic.
+  </p>
+
+  <h3>4.1b Why the Base Inventory Stays Closed at 108</h3>
+  <p>
+    Unlike Pāṇinian phonology, where the varṇa inventory is fixed by the physical constraints of the
+    human vocal tract, the karaṇa inventory's closure at 108 is a compositional decision, not a
+    physiological one — the human body is capable of vastly more than 108 distinct hand-foot
+    combinations. This distinction matters for how the "science" claim in this white paper's title
+    should be qualified. A phonological inventory is closed because nature closes it; a karaṇa inventory
+    is closed because a tradition of practice, refined and pruned over generations of performance, judged
+    108 combinations to be the set worth canonizing — presumably because these were found, through
+    accumulated practice observation, to be the combinations capable of carrying stable, recognizable
+    aesthetic-emotional signal, with the remainder falling away as either redundant or non-communicative.
+    If this reading is correct, the 108 karaṇas represent something closer to a curated, empirically
+    validated communication protocol than an exhaustive catalogue of physical possibility — which is
+    itself a striking claim: it implies centuries of what would today be called iterative user-testing
+    on audiences, compressed into a canonical text.
+  </p>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 06</div>
+    <p>
+      Is there any textual or epigraphic evidence (temple sculptural programs, commentarial remarks, or
+      regional treatise variants) indicating that the 108-karaṇa set was arrived at through a historical
+      process of pruning a larger observed repertoire — i.e., evidence for the "curated communication
+      protocol" reading above — as opposed to 108 being a starting design target chosen for its
+      numerological resonance and then filled in by compositional invention to match the target count?
+    </p>
+    <div class="rq-status">Status: open. Module XI (108 Karaṇas: Structure and Source) on this platform
+    treats the epigraphic register directly and should be cross-checked here before this question can be
+    closed even provisionally.</div>
+  </div>
+
+  <h3>4.2 Karaṇa as Emotionally Loaded, Not Emotionally Neutral, Movement</h3>
+  <p>
+    A persistent misreading, especially outside specialist dance scholarship, treats the karaṇas as pure
+    technical positions — the equivalent of ballet's five positions, a vocabulary of shape without
+    inherent affective content. The text does not support this. Karaṇas are drawn into aṅgahāras that
+    are explicitly assigned to specific dramatic contexts — the Nāṭyaśāstra links particular karaṇa
+    sequences to specific narrative and emotional occasions (combat, celebration, viraha/separation,
+    devotional address), meaning the kinetic vocabulary was never affect-neutral in application even
+    though individual karaṇas, taken in isolation, are technically definable as pure position. The
+    emotional loading happens at the level of sequencing and context (aṅgahāra), the same way individual
+    phonemes are affect-neutral but their combination into words carries meaning.
+  </p>
+
+  <h3>4.3 Tāṇḍava and Lāsya: The Karaṇa System's Gendered Register Duality</h3>
+  <p>
+    The tradition attributes the vigorous, energetic register of the karaṇa system (tāṇḍava) to Śiva and
+    a softer, graceful register (lāsya) to Pārvatī, and this duality is not merely mythological color —
+    it functions as a second axis of classification running alongside the emotional/rasa classification
+    already discussed. The same underlying karaṇa vocabulary can, in principle, be inflected toward
+    either register, meaning the system carries an additional expressive dimension (intensity/quality of
+    execution — vigorous versus graceful) layered on top of the rasa-specific content dimension (which
+    emotion is being conveyed). A single karaṇa executed in tāṇḍava register within a vīra-rasa
+    (heroic) context communicates differently than the structurally related movement executed in lāsya
+    register within a śṛṅgāra (romantic) context, even where the base positional vocabulary overlaps.
+    This is analogous to the way a single grammatical construction in language can be inflected by
+    register (formal/informal, forceful/gentle) without changing its underlying syntactic structure —
+    a second, independent parameter riding on top of the combinatorial architecture discussed in 4.1a.
+  </p>
+
+  <h3>4.4 A Representative Sample of Named Karaṇas</h3>
+  <p>
+    The full 108-karaṇa enumeration, with detailed positional description and epigraphic
+    cross-referencing to temple sculptural programs, is the subject of Module XI (108 Karaṇas: Structure
+    and Source) elsewhere on this platform and is not reproduced in full here to avoid duplicating that
+    module's scope. A representative sample is useful in this doctrinal module, however, to make the
+    combinatorial and semantic claims of Sections 4.1 through 4.3 concrete rather than abstract:
+  </p>
+  <table class="compare">
+    <tr><th>#</th><th>Karaṇa name</th><th>Approximate character</th></tr>
+    <tr><td>1</td><td>Tālapuṣpapuṭa</td><td>Hands cupped like a flower bud, opening — associated with offering/invocation contexts</td></tr>
+    <tr><td>2</td><td>Vartita</td><td>A turning/rotating movement, foundational connector-adjacent karaṇa</td></tr>
+    <tr><td>3</td><td>Valitoruka</td><td>Thigh-turned position, used in transitional and combative sequences</td></tr>
+    <tr><td>4</td><td>Apaviddha</td><td>A thrown/flung-limb movement, associated with vigorous tāṇḍava contexts</td></tr>
+    <tr><td>5</td><td>Samanakha</td><td>Level-nail (balanced foot) position, a foundational stance-karaṇa</td></tr>
+    <tr><td>8</td><td>Ardhanikuṭṭaka</td><td>Half-striking movement, combative register</td></tr>
+    <tr><td>13</td><td>Daṇḍapakṣa</td><td>Staff-wing position, associated with heroic (vīra) contexts</td></tr>
+    <tr><td>21</td><td>Alāta</td><td>Firebrand-circle movement, a rotational karaṇa associated with dynamic energy</td></tr>
+    <tr><td>39</td><td>Nāgāpasarpita</td><td>Serpent-receding movement, associated with fear/withdrawal contexts (bhayānaka-adjacent)</td></tr>
+    <tr><td>65</td><td>Latāvṛścika</td><td>Scorpion-creeper position, combining coiled tension with extension</td></tr>
+    <tr><td>92</td><td>Sūcī</td><td>Needle position, a precise, narrow-profile stance karaṇa</td></tr>
+    <tr><td>108</td><td>Gaṅgāvataraṇa</td><td>Descent-of-the-Ganges movement, the traditionally final-numbered karaṇa in standard enumerations, associated with descending/cascading imagery</td></tr>
+  </table>
+  <span class="tag classical">Classical Attested (names and standard positions per Adhyāya 4 and commentarial tradition)</span>
+  <span class="tag modern">Modern Scholarship (character glosses, informed by Subrahmanyam's reconstruction work)</span>
+
+  <p>
+    Even this small sample shows the semantic range the 108-karaṇa vocabulary spans — devotional
+    (tālapuṣpapuṭa), combative (ardhanikuṭṭaka), fearful (nāgāpasarpita), and cosmological/narrative
+    (gaṅgāvataraṇa) content are all encoded within what a purely technical reading would flatten into
+    "hand-foot position #21" or "#92." The names themselves carry interpretive content prior to any
+    performance context being added, which is further evidence against treating the karaṇa system as
+    emotionally neutral raw material awaiting external assignment of meaning (the position taken against,
+    with qualification, in Section 4.2 above).
+  </p>
+
+</section>
+
+<section class="module" id="s5b">
+  <h2><span class="num">05</span> The Fourfold Abhinaya System: A Complete Signal-Channel Theory</h2>
+
+  <p>
+    Bharata does not treat expression as a single undifferentiated skill. Adhyāya 8 through 14 develop
+    a four-channel theory of dramatic communication — āṅgika (bodily), vācika (verbal), āhārya (costume
+    and ornament), and sāttvika (involuntary psychophysical, treated in depth in Section 6 below) —
+    and the completeness of this taxonomy is itself a claim worth making explicit: Bharata is asserting
+    that human emotional-communicative signal travels through exactly these four channels and no others,
+    which is a strong, falsifiable claim about the architecture of interpersonal expression, not a loose
+    descriptive convenience.
+  </p>
+
+  <div class="verse-block">
+    <div class="devanagari skt">आङ्गिकं वाचिकं चैव आहार्यं सात्त्विकं तथा । चतुर्विधोऽभिनयो ज्ञेयो नाट्ये नाट्यविशारदैः ॥</div>
+    <div class="translit">āṅgikaṃ vācikaṃ caiva āhāryaṃ sāttvikaṃ tathā, catur-vidho'bhinayo jñeyo nāṭye nāṭya-viśāradaiḥ</div>
+    <div class="gloss">
+      Abhinaya (dramatic expression/communication) should be understood by those skilled in the
+      dramatic art as fourfold: āṅgika (bodily), vācika (verbal), āhārya (costume/ornament/external
+      accoutrement), and sāttvika (involuntary psychophysical). This is Bharata's foundational taxonomy
+      of expressive channels, elaborated across Adhyāyas 8–14.
+    </div>
+    <div class="loc">Nāṭyaśāstra 8.9 (paraphrase, standard structural summary verse)</div>
+  </div>
+  <span class="tag classical">Classical Attested</span>
+
+  <h3>5.1 Āṅgika: The Body as Primary Channel, and Its Own Internal Grammar</h3>
+  <p>
+    Āṅgika abhinaya — bodily expression — is itself subdivided by the text into the movement of the head
+    (śiraḥ), the eyes (dṛṣṭi, with eight separate named gazes each mapped to a specific emotional
+    register — kāntā, bhayānikā, vibhrāntā, etc.), the neck (grīvā, four types), the eyebrows (bhrū,
+    seven movements), the nose, cheeks, lips, chin, and — at the level relevant to the karaṇa system
+    proper — the hands (hasta, in single/asaṃyuta and combined/saṃyuta forms) and the whole-body
+    positions and gaits that generate the karaṇas themselves. The granularity here is the textual
+    detail most often lost when the Nāṭyaśāstra is popularly summarized as "hand gesture and footwork":
+    the eye alone carries eight distinct named expressive states before the hands or feet are involved
+    at all, which means the text's model of bodily communication is operating at a resolution far below
+    whole-gesture units, down to what modern affective science would call micro-expression territory.
+  </p>
+
+  <h3>5.2 Vācika: Speech as a Musical-Emotional Instrument, Not Just Semantic Carrier</h3>
+  <p>
+    Vācika abhinaya covers not the semantic content of dialogue (which is playwriting, handled
+    elsewhere in the dramaturgical portions of the text) but the prosodic-performative delivery of
+    speech: kāku (modulation of tone/pitch to convey subtext or irony independent of literal word
+    meaning), the ten guṇas (qualities) of dramatic composition, and the specific vocal registers
+    appropriate to each rasa. This is significant for the EQ argument because kāku in particular
+    demonstrates that Bharata's system already recognized what modern pragmatics calls the gap between
+    semantic and pragmatic meaning — the same sentence, delivered with different kāku, carries different
+    emotional truth, and reading that gap correctly is a distinct competency from language comprehension
+    itself.
+  </p>
+
+  <h3>5.3 Āhārya: The Environmental and Presentational Channel</h3>
+  <p>
+    Āhārya — costume, makeup (aṅgaracanā), ornament, and stage properties — is the channel most often
+    dismissed as merely decorative in casual treatments of the text, but Bharata's inclusion of it as a
+    full quarter of the abhinaya system signals a more complete theory of communication than a purely
+    bodily-verbal model would offer: context and presentation modulate how a signal is received,
+    independent of the signal's own content. A given sāttvika response (tears, trembling) reads
+    differently to a spectator depending on the āhārya framing establishing who the character is and
+    what stakes are in play. This is structurally close to what modern communication theory calls
+    context-dependent signal interpretation, and its presence as a formally theorized channel — rather
+    than an unexamined backdrop — is further evidence against reading Nāṭyaśāstra as a narrowly technical
+    performance manual.
+  </p>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 07</div>
+    <p>
+      Does the four-channel abhinaya taxonomy (āṅgika/vācika/āhārya/sāttvika) exhaustively anticipate
+      the channels recognized in modern nonverbal-communication research (kinesics, paralinguistics,
+      proxemics/artifacts, and physiological arousal, respectively) closely enough to argue that Bharata
+      arrived independently at a structurally complete taxonomy of human expressive channels — or does
+      the modern four-part division (Ekman and Friesen's channel typology, for instance) actually
+      contain a fifth element, proxemics/spatial distance as distinct from artifact/costume, that
+      Bharata's āhārya category does not clearly separate out?
+    </p>
+    <div class="rq-status">Status: open. Requires close reading of whether stage-space and blockading
+    conventions (raṅgapīṭha divisions, discussed in Adhyāya 2) constitute an implicit fifth,
+    proxemic channel that later got folded into āhārya rather than kept distinct.</div>
+  </div>
+
+</section>
+
+<section class="module" id="s5">
+  <h2><span class="num">06</span> Buddhi, Manas, and the Cognitive Machinery Presupposed by Abhinaya</h2>
+
+  <p>
+    The "intelligence quotient" half of this white paper's title requires textual grounding independent
+    of the emotion (EQ) discussion, and the Nāṭyaśāstra provides it through its treatment of sāttvika
+    bhāvas — involuntary psychophysical responses (stambha/paralysis, sveda/perspiration, romāñca/
+    horripilation, svarabheda/voice-break, vepathu/trembling, vaivarṇya/pallor, aśru/tears, pralaya/
+    fainting) that Bharata explicitly distinguishes from voluntarily performed (kṛtrima) expression.
+  </p>
+
+  <p>
+    The sāttvika bhāvas are cognitively significant because they name, with clinical precision that
+    predates modern autonomic-nervous-system vocabulary by roughly fifteen centuries, the involuntary
+    physiological signature of intense emotional states — the exact domain that modern affective
+    neuroscience calls autonomic arousal. A performer's ability to summon these convincingly (through
+    sādhāraṇīkaraṇa-compatible imaginative absorption rather than mechanical mimicry) and a spectator's
+    ability to correctly read them as authentic rather than performed both require a level of embodied
+    cognitive sophistication that goes well beyond simple pattern recognition — it requires theory of
+    mind, the cognitive capacity to model another agent's internal state from external signal, operating
+    at high resolution in both directions of the performer-spectator circuit.
+  </p>
+
+  <table class="compare">
+    <tr><th>Sāttvika Bhāva</th><th>Sanskrit Term</th><th>Modern physiological correlate</th></tr>
+    <tr><td>Paralysis / freezing</td><td>Stambha</td><td>Tonic immobility (autonomic fear response)</td></tr>
+    <tr><td>Perspiration</td><td>Sveda</td><td>Sympathetic sudomotor activation</td></tr>
+    <tr><td>Horripilation</td><td>Romāñca</td><td>Piloerection (sympathetic arousal)</td></tr>
+    <tr><td>Voice-break</td><td>Svarabheda</td><td>Laryngeal muscle tension under affect</td></tr>
+    <tr><td>Trembling</td><td>Vepathu</td><td>Motor tremor under sympathetic activation</td></tr>
+    <tr><td>Pallor</td><td>Vaivarṇya</td><td>Peripheral vasoconstriction</td></tr>
+    <tr><td>Tears</td><td>Aśru</td><td>Lacrimal response, parasympathetic component</td></tr>
+    <tr><td>Fainting</td><td>Pralaya</td><td>Vasovagal syncope / acute dissociative collapse</td></tr>
+  </table>
+  <span class="tag classical">Classical Attested (Sanskrit terms and definitions)</span>
+  <span class="tag modern">Modern Scholarship (physiological correlates, general ANS literature)</span>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 05</div>
+    <p>
+      The eight sāttvika bhāvas correspond closely to what modern psychophysiology terms observable
+      correlates of autonomic nervous system arousal. Does Bharata's text imply any causal theory of
+      <em>why</em> emotion produces these bodily changes (an implicit physiology, however
+      pre-scientific), or does it treat them purely descriptively/functionally as reliable external
+      markers an actor must learn to represent and a spectator must learn to read, without committing to
+      an internal mechanism? This bears directly on whether Nāṭyaśāstra should be read as proto-scientific
+      or purely observational-pragmatic in its treatment of the body.
+    </p>
+    <div class="rq-status">Status: open. Requires cross-reference against Āyurvedic tridoṣa theory,
+    which Bharata does not explicitly invoke in Adhyāya 7 but which later commentators sometimes read
+    into the sāttvika bhāva discussion. Planned for cross-check in Part IV (Neuroscientific/Somatic).</div>
+  </div>
+
+  <h3>6.1 Manas, Buddhi, and the Actor's Dual-Process Requirement</h3>
+  <p>
+    Classical psychological vocabulary distinguishes manas (the sensory-coordinating mind, which
+    registers and organizes raw perceptual and affective input) from buddhi (discriminative intellect,
+    which judges, decides, and directs). Though the Nāṭyaśāstra does not import this Sāṃkhya-Yoga
+    vocabulary wholesale into its dramaturgical discussion, the performer's task as the text describes
+    it presupposes exactly this two-tier cognitive architecture: successful abhinaya requires manas-level
+    absorption into the represented emotional state (without which the sāttvika bhāvas cannot be
+    genuinely summoned, only mimicked) held simultaneously with buddhi-level technical control — correct
+    timing, correct karaṇa selection, correct spatial positioning relative to other performers and the
+    audience. An actor who is purely manas-absorbed, with no buddhi-level control, produces
+    uncontrolled, technically incorrect expression that fails to transmit; an actor who is purely
+    buddhi-controlled with no manas-absorption produces technically correct but emotionally hollow
+    expression that likewise fails to transmit rasa to the sahṛdaya. The text's implicit theory is that
+    successful abhinaya requires both systems operating concurrently and in balance — which is, again,
+    a structural anticipation of what modern dual-process cognitive theory (System 1 automatic/affective
+    processing operating alongside System 2 controlled/deliberate processing) treats as a general
+    feature of human cognition, not a performance-specific curiosity.
+  </p>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 08</div>
+    <p>
+      Can the manas/buddhi dual requirement implicit in successful abhinaya be operationalized as a
+      testable model of expert performance more broadly — i.e., does the same dual-process balance
+      (affective absorption plus technical control, neither alone sufficient) generalize as a
+      description of skilled performance in domains outside dance-drama entirely, such as elite athletic
+      performance, surgical practice, or public oratory? If so, the Nāṭyaśāstra's implicit performer
+      psychology would constitute a general theory of skilled embodied cognition rather than a
+      theatre-specific doctrine.
+    </p>
+    <div class="rq-status">Status: open, reserved for deeper treatment in Part III where the modern
+    dual-process psychology literature is brought in directly.</div>
+  </div>
+
+  <h3>6.2 Smṛti as a Case Study: Why the Vyabhicāribhāva List Includes "Memory"</h3>
+  <p>
+    Section 2.3 noted, without elaborating, that smṛti (recollection) appears among the thirty-three
+    vyabhicāribhāvas — a striking inclusion, since memory retrieval is not, in most modern frameworks, a
+    canonical example of an emotional state at all. Its presence here is worth returning to as direct
+    evidence for the cognitive (not merely emotional) scope of Bharata's psychological model. The text's
+    inclusion of smṛti among the transitory states a performer must be able to represent, and a spectator
+    must be able to read, indicates that Bharata's working model of human interiority did not draw a hard
+    boundary between "cognitive" events (remembering, judging, deliberating — vitarka and mati also appear
+    on the list) and "emotional" events (grief, joy, fear) in the way modern psychology's separate
+    literatures on cognition and emotion sometimes imply a boundary. A character shown in the specific
+    act of recollecting — the visible, dramatizable moment of a memory surfacing, distinct from simply
+    speaking about a past event — carries its own recognizable anubhāva (a characteristic stillness, a
+    characteristic quality of gaze) and its own emotional coloring (recollection is rarely affectively
+    neutral; it typically surfaces already tinted by whatever emotional valence attached to the original
+    experience). Bharata's taxonomy, by including smṛti alongside śoka, harṣa, and bhaya as items of the
+    same general kind, is implicitly making the modern-sounding claim that cognition and affect are not
+    cleanly separable processes but are, in the domain of observable human behavior at least, intertwined
+    enough that a single unified taxonomy of "psychophysical states relevant to dramatic representation of
+    a person" can meaningfully include both.
+  </p>
+
+  <h3>6.3 Doṣa: The Text's Own Fault-Taxonomy as Evidence of a Competency Model</h3>
+  <p>
+    A further underused piece of textual evidence for reading Nāṭyaśāstra as containing something like an
+    intelligence-quotient dimension, not merely an emotion-quotient dimension, is the text's treatment of
+    doṣa — faults or defects in performance. Bharata does not only specify what correct execution looks
+    like; scattered through the technical chapters are negative specifications — named ways a karaṇa, a
+    vocal delivery, or an emotional representation can go wrong, ranging from technical faults (incorrect
+    hand position, mistimed transition) to what would today be called calibration faults: overacting
+    (ativyāpti-type failure, where sāttvika bhāva is performed in excess of what the vibhāva warrants) and
+    underacting (avyāpti-type failure, where the represented state is insufficiently visible for the
+    sahṛdaya to register it). A performer capable of avoiding these calibration faults is exercising a
+    form of self-monitoring competence — an ability to judge one's own output against an external
+    standard and adjust — that maps closely onto what modern competency frameworks would call metacognitive
+    skill or self-regulation, a component many contemporary EQ models (Goleman's self-regulation pillar,
+    reserved for direct discussion in Part III) treat as a core rather than peripheral component of
+    emotional intelligence, distinct from the raw capacity to recognize or express emotion.
+  </p>
+  <p>
+    The existence of a formal fault-taxonomy is significant for a second reason as well: it means the
+    Nāṭyaśāstra's implicit theory of skill is falsifiable and correctable, not merely descriptive. A
+    tradition that only describes what correct execution looks like, without a parallel account of how
+    execution fails, cannot function as a training curriculum in the full sense — training requires
+    diagnostic categories for error, not just target categories for success. The presence of a doṣa
+    taxonomy alongside the guṇa (positive quality) taxonomy in the vācika and other chapters indicates
+    that Bharata's text was designed to function pedagogically, as a tool for identifying and correcting
+    specific failures, not merely as a static description of an ideal.
+  </p>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 11</div>
+    <p>
+      Does the calibration-fault category (over- or under-representation of sāttvika bhāva relative to
+      the vibhāva warranting it) constitute a textually explicit precedent for what modern affective
+      science calls emotional regulation failure — either hyper-reactivity or blunted affect — and if so,
+      does the corrective training the Nāṭyaśāstra prescribes for performers (repeated practice under a
+      teacher's correction, per the ācārya-śiṣya model referenced in Section 1.2) offer a structurally
+      distinct alternative or complement to modern clinical approaches to affect regulation training?
+    </p>
+    <div class="rq-status">Status: open, reserved for direct engagement in Part III alongside the
+    self-regulation pillar of modern EQ models.</div>
+  </div>
+
+</section>
+
+<section class="module" id="s7">
+  <h2><span class="num">07</span> Śāstra as Genre: How Nāṭyaśāstra Positions Its Own Authority</h2>
+
+  <p>
+    A claim this white paper series repeatedly relies on — that Nāṭyaśāstra functions as a general
+    science rather than a craft manual — cannot be assessed without asking what kind of textual authority
+    a śāstra claims for itself within classical Indian epistemology, because "science" is a modern
+    category being applied retrospectively and the fit needs to be earned rather than assumed. This
+    section examines the Nāṭyaśāstra's self-positioning against the broader śāstra genre convention and
+    against the classical pramāṇa (means of valid knowledge) framework the wider intellectual culture used
+    to adjudicate competing knowledge claims.
+  </p>
+
+  <h3>7.1 The Śāstra Genre's Standard Self-Justification Pattern</h3>
+  <p>
+    Classical śāstra texts — whether Kauṭilya's Arthaśāstra, Suśruta and Caraka's medical treatises, or
+    Bharata's own text — conventionally open with a claim of divine or sage-transmitted origin, followed
+    by a statement of the discipline's scope and purpose (this is precisely what Adhyāya 1's fifth-Veda
+    narrative accomplishes), followed by a systematic exposition organized by topic (adhikaraṇa or
+    adhyāya divisions) that proceeds from foundational definitions toward increasingly specific applied
+    material. The Nāṭyaśāstra follows this pattern with unusual completeness: Adhyāya 1 establishes
+    origin and purpose; Adhyāya 2 establishes the physical/institutional apparatus (theatre architecture,
+    the nāṭyamaṇḍapa); Adhyāyas 4 through 14 build the technical vocabulary (karaṇas, abhinaya, rasa)
+    from minimal units upward; later chapters address dramaturgy, music, and practical production
+    concerns. This is not the structure of an oral craft tradition committed to writing as an afterthought;
+    it is the structure of a text designed, from its own internal logic, to be a comprehensive systematic
+    treatise — a śāstra in the full technical sense the genre term implies, on par in ambition with the
+    Arthaśāstra's treatment of statecraft or the Carakasaṃhitā's treatment of medicine.
+  </p>
+
+  <h3>7.2 Pramāṇa and the Question of How Rasa-Knowledge Is Validated</h3>
+  <p>
+    Classical Indian epistemology (pramāṇa-śāstra, most systematically developed in Nyāya) recognizes
+    several means of valid knowledge: pratyakṣa (direct perception), anumāna (inference), upamāna
+    (comparison/analogy), and śabda (verbal testimony, particularly scriptural testimony). Where does
+    rasa-knowledge — the claim that a given vibhāva-anubhāva-vyabhicāribhāva combination reliably produces
+    a specific rasa in a properly cultivated sahṛdaya — sit within this framework? The textual evidence
+    points toward a hybrid validation strategy rather than reliance on a single pramāṇa. Śabda (testimony)
+    is invoked through the fifth-Veda framing itself — nāṭya carries scriptural authority by virtue of its
+    divine origin narrative. But the actual technical content — which karaṇa combinations, which specific
+    eye movements, which vocal modulations reliably transmit which rasa — reads as knowledge built from
+    accumulated pratyakṣa (observed audience response across generations of performance) refined by
+    anumāna (inference to general principles from repeated particular cases) rather than knowledge simply
+    asserted on scriptural authority alone. This is a significant epistemological claim: it suggests the
+    Nāṭyaśāstra's technical core, however wrapped in a scriptural authority-claim at the level of the
+    discipline's overall legitimacy, operates internally more like an empirical craft-science, refined
+    through centuries of performance and audience-response iteration, than like revealed doctrine
+    immune to revision — a reading directly supported by the eight-versus-nine rasa debate discussed in
+    Section 2.2, where later commentators successfully argued for expanding the canonical taxonomy on
+    the basis of a persuasive case about aesthetic experience, not on the basis of new scriptural
+    revelation.
+  </p>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 09</div>
+    <p>
+      If the Nāṭyaśāstra's technical core is best characterized as empirically refined craft-knowledge
+      operating under a scriptural authority-claim rather than as revealed doctrine in the stricter
+      sense, what does this imply for the modern project of validating or extending karaṇa/rasa theory
+      using contemporary empirical methods (controlled emotion-recognition studies, physiological
+      measurement of audience response)? Would such modern validation work be continuous with the
+      text's own original epistemic method — a modern instance of exactly the audience-response
+      refinement process that generated the text in the first place — or would it constitute a category
+      shift the tradition itself would not recognize as legitimate extension?
+    </p>
+    <div class="rq-status">Status: open, and flagged as a question with direct practical consequences for
+    Parts III and IV of this series, both of which propose exactly this kind of modern empirical
+    engagement with classical claims.</div>
+  </div>
+
+  <h3>7.3 Comparison with Contemporaneous Śāstra: Why Nāṭyaśāstra's Scope Claim Is Not Unusual</h3>
+  <p>
+    One further point sharpens the universalist reading defended in Section 1. Kauṭilya's Arthaśāstra
+    claims comprehensive authority over statecraft, addressed in principle to any ruler regardless of
+    lineage, provided they master its content. Caraka and Suśruta's medical treatises claim comprehensive
+    authority over the human body and its ailments, addressed to any physician who undergoes proper
+    training, without restricting the underlying physiological knowledge itself to a closed hereditary
+    guild. Against this backdrop, the Nāṭyaśāstra's claim to comprehensive authority over human emotional
+    expression and its transmission, addressed to all four varṇas at the level of reception, is not an
+    outlier within the śāstra genre — it is the genre's normal ambition, applied to a domain (emotion and
+    its expression) that later historical developments happened to narrow into a specialist artistic
+    preserve in a way that never equivalently happened to, say, Āyurvedic medical knowledge, which
+    retained a broader (if still imperfect and unevenly distributed) social presence across the same
+    historical span. Explaining that asymmetry — why medicine stayed more broadly present in general
+    culture while performance-emotion-science narrowed toward guild specialization — is a central
+    question for Part II.
+  </p>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 10</div>
+    <p>
+      Why did Āyurvedic knowledge retain broader social presence and household-level practical
+      transmission across the centuries in a way that Nāṭyaśāstra-derived knowledge of emotional
+      expression and regulation did not, despite both originating as comprehensive śāstras with
+      universalist scope claims? Is the difference explained by medicine's continuous practical necessity
+      (illness does not stop occurring, guaranteeing demand-side pressure for transmission) against
+      performance-emotion-science's dependence on patronage structures (temple and court) that were
+      historically far more fragile and subject to political disruption?
+    </p>
+    <div class="rq-status">Status: open, positioned as the opening question for Part II.</div>
+  </div>
+
+  <h3>7.4 Nāṭya as Imitation of the Three Worlds: The Scope Claim at Maximum Extension</h3>
+  <p>
+    Bharata's Adhyāya 1 makes one further scope claim that deserves standalone treatment: nāṭya is
+    described as an imitation (anukaraṇa/anukīrtana) of the conditions of all three worlds
+    (trailokya) — the states, conduct, and conditions of gods, humans, and the various other classes of
+    being, encompassing joy and sorrow, virtue and vice, in every stratum of existence. This is the
+    maximal version of the universalist scope claim examined throughout this module: not merely that
+    nāṭya is addressed to all varṇas as audience, and not merely that its taxonomy of emotional and
+    cognitive states aims at completeness, but that its representational ambition is cosmologically
+    total — nothing in the range of possible experienced states, across the entire hierarchy of beings
+    the tradition recognized, falls outside what nāṭya claims competence to represent and, through
+    representation, to teach.
+  </p>
+  <p>
+    This total-scope claim is worth stating plainly because it is the textual root from which every
+    narrower claim examined in Sections 1 through 6 ultimately descends: the fifth-Veda's universal
+    address (Section 1), the rasa-sūtra's componential completeness (Section 2), the sahṛdaya's
+    two-body transmission model (Section 3), the karaṇa system's combinatorial completeness (Section 4),
+    the fourfold abhinaya's channel completeness (Section 5), and the sāttvika/vyabhicāribhāva
+    taxonomies' psychophysical completeness (Section 6) are all, in effect, specific instantiations of a
+    single governing ambition stated at the outset: to construct a complete science of represented human
+    (and more-than-human) experience, address it to everyone, and validate it through the standard
+    apparatus of śāstric authority examined in Section 7.1 through 7.3. Whatever the historical process
+    that narrowed this total ambition into a fine-arts specialty — the subject of Part II — that
+    narrowing was not latent in the founding claim. It is a historical accretion layered onto a text that
+    began, in its own stated terms, claiming the largest possible scope available within its
+    intellectual universe.
+  </p>
+
+</section>
+
+<section class="module" id="s7b">
+  <h2><span class="num">08</span> Methodological Caveats Specific to This Module</h2>
+
+  <p>
+    Before the closing synthesis, four caveats need to be stated plainly, in keeping with this platform's
+    standing commitment to honest reporting on where a claim is well-evidenced versus speculative, rather
+    than allowing the momentum of a six-part argument to smooth over places where the ground is genuinely
+    less solid.
+  </p>
+
+  <h3>8.1 Edition and Recension Variance</h3>
+  <p>
+    The Nāṭyaśāstra survives in a textual tradition with meaningful recension variance — the southern and
+    northern manuscript traditions differ in places on chapter count, verse order, and in some cases
+    content, and the standard printed editions (GOS, and the earlier but less complete editions) reflect
+    editorial choices among competing manuscript witnesses rather than a single uncontested original. Where
+    this module cites a specific verse number, that citation follows the GOS convention as the most widely
+    used scholarly reference point across this platform's series, but a reader consulting a different
+    edition may find verse numbers shifted by a chapter or a few verses in places, particularly in the
+    later, more variably transmitted chapters. The core doctrinal claims this module rests on — the
+    fifth-Veda narrative, the rasa-sūtra, the karaṇa enumeration, the fourfold abhinaya system — are stable
+    across recensions even where exact verse numbering is not, which is why this module has generally cited
+    chapter-level and thematic location rather than leaning on verse-number precision as load-bearing.
+  </p>
+
+  <h3>8.2 The Risk of Retrospective Systematization</h3>
+  <p>
+    This module has repeatedly drawn structural parallels — karaṇa/aṅgahāra to phoneme/word, manas/buddhi
+    to System 1/System 2, the fourfold abhinaya to modern communication-channel theory — and has tried, in
+    each case, to flag explicitly when the parallel is AI Synthesis rather than Classical Attested doctrine.
+    It is worth stating the general risk directly: any sufficiently determined comparativist can find
+    structural echoes between an ancient systematic text and a modern systematic theory, because both are,
+    definitionally, systematic — the risk is mistaking the fact of structure for evidence of a specific,
+    intended correspondence. This module's discipline has been to require either (a) explicit textual
+    warrant from Bharata or a major commentator, or (b) explicit flagging as synthesis when no such warrant
+    exists. Sections 4.1a and 4.1b (the Pāṇinian-grammar parallel) and Section 5's channel-taxonomy
+    discussion are the two places in this module where that discipline is most tested, and the module has
+    tried to be maximally explicit about the synthesis-status of those claims rather than letting the
+    quality of the prose do work the textual evidence has not earned.
+  </p>
+
+  <h3>8.3 What "108 Karaṇas as EQ Curriculum" Does Not Yet Claim</h3>
+  <p>
+    Nothing in this module establishes that training in the 108 karaṇas produces measurable emotional-
+    intelligence gains in a modern psychometric sense, nor that watching karaṇa-based performance reliably
+    improves a naive spectator's emotion-recognition ability outside the cultivated-sahṛdaya condition the
+    tradition itself specifies as a precondition for rasa completion. Those are empirical claims requiring
+    empirical methods, and this white paper series' textual argument (Part I) is not a substitute for that
+    empirical work — it is the necessary groundwork that makes the empirical work well-specified rather
+    than a vague gesture at "ancient wisdom." Part III's engagement with the psychological literature and
+    Part IV's engagement with the neuroscience literature will need to design any proposed empirical tests
+    with full awareness of the aesthetic-distance/sādhāraṇīkaraṇa qualification established in Section 3.2
+    — a naive study that simply shows karaṇa videos to untrained subjects and measures emotion-recognition
+    accuracy would not actually be testing the tradition's own claim, which explicitly requires cultivated
+    reception (sahṛdaya-hood) as a precondition, not an incidental detail.
+  </p>
+
+  <h3>8.4 Scope Boundary With the Forthcoming Linguistic Series</h3>
+  <p>
+    Readers familiar with this platform's existing VAK Series work may notice this module has avoided
+    drawing the vāk-doctrine (Parā/Paśyantī/Madhyamā/Vaikharī) into its argument even where the material
+    plainly invites it — Vaikharī, the fully externalized register of speech, is structurally analogous to
+    the fully externalized register of embodied karaṇa-expression, and a case could be built that both are
+    surface-level Vaikharī-tier phenomena descending from a shared Paśyantī-level undifferentiated
+    intention. That case is not made here, deliberately. The user's own framing of this project specifies
+    that the linguistic dimension will be dealt with separately, as a larger six-series project following
+    the present series, and this module has kept strict scope discipline accordingly — flagging the
+    connection's existence (as in RQ04) without developing it, so that the forthcoming linguistic project
+    is not pre-empted or duplicated by premature treatment here.
+  </p>
+
+</section>
+
+<section class="module" id="s6">
+  <h2><span class="num">09</span> Synthesis: What the Text Itself Licenses Us to Claim</h2>
+
+  <h3>7.1 Why This Module Deliberately Stopped Short of the Modern Comparison</h3>
+  <p>
+    A reader impatient to see the neuroscience and the psychology brought in directly may find Part I's
+    discipline frustrating — every section above has gestured toward a modern parallel and then explicitly
+    deferred it to a later part of the series. That deferral is methodological, not evasive. The single
+    most common failure mode in comparative Indology, and the failure mode this series is most anxious to
+    avoid, is what might be called premature equivalence: reaching for a modern term (emotion, cognition,
+    intelligence, regulation) before the classical term it is being mapped onto has been established on
+    its own terms, with its own internal distinctions and its own limits intact. Sections 1 through 6 have
+    tried to do the slower, less immediately gratifying work of letting the Nāṭyaśāstra's vocabulary speak
+    first — rasa is not simply "emotion," sthāyibhāva is not simply "basic emotion," sāttvika bhāva is not
+    simply "autonomic response," even where the family resemblance is real and worth pursuing. Only once
+    that internal vocabulary is secure does a comparison become a genuine test of convergence rather than
+    an act of translation that quietly imports modern assumptions into the ancient text and then
+    "discovers" them there.
+  </p>
+  <p>
+    This discipline matters especially for a series whose stated purpose is corrective — restoring general
+    human access to material currently confined to fine-arts specialists. A restoration project that
+    achieves broader access by flattening the source material into an approximate modern equivalent has
+    not actually restored access to the Nāṭyaśāstra; it has replaced the Nāṭyaśāstra with a modern
+    psychology textbook wearing Sanskrit vocabulary as costume. The access being sought throughout this
+    six-part series is access to the actual doctrine, in its actual complexity, including the places where
+    it resists modern categories rather than confirming them. RQ02, RQ04, and RQ07 above are all,
+    in different ways, instances of the series explicitly flagging where a tempting equivalence has not
+    yet been earned.
+  </p>
+
+  <p>
+    Holding strictly to what has been shown with citation in Sections 1–6, the textual case for reading
+    Nāṭyaśāstra and the 108 Karaṇas as a general human science of emotional and cognitive intelligence —
+    rather than a specialist performing-arts manual — rests on four load-bearing claims, each Classical
+    Attested:
+  </p>
+
+  <ol class="karana-list">
+    <li><strong>Universal address at origin.</strong> The fifth-Veda narrative in Adhyāya 1 explicitly
+    frames nāṭya as constructed to reach audiences the existing Vedic curriculum structurally excluded —
+    an access-expanding, not access-restricting, founding purpose.</li>
+    <li><strong>A componential, general theory of emotion.</strong> The rasa-sūtra (Adhyāya 6) is not a
+    list of expressions to copy; it is a causal model of how emotion is triggered, expressed, and
+    modulated — general enough in structure to apply, in principle, to emotional transmission outside
+    the theatre entirely.</li>
+    <li><strong>A two-body transmission model.</strong> Abhinavagupta's sahṛdaya doctrine relocates rasa's
+    completion into the spectator, making the system explicitly interpersonal and dependent on trainable
+    reception, not just trainable performance — precisely the structure of what is today called emotional
+    intelligence.</li>
+    <li><strong>A rule-governed, combinatorial kinetic-cognitive vocabulary.</strong> The 108 karaṇas are
+    generated from a minimal base inventory by rule, in a manner structurally parallel to the generative
+    grammar governing Sanskrit phonology — suggesting an underlying cultural commitment to treating
+    embodied expression as a rigorous, learnable system rather than raw, untheorized behavior.</li>
+  </ol>
+
+  <p>
+    None of these four claims, on their own, proves that ordinary premodern or modern Indians actually
+    received this material as general education. That is a historical and sociological question, not a
+    textual one, and it is the subject of Part II. What Part I establishes is narrower and more secure:
+    the text's own self-understanding was universalist, general, and access-expanding at the moment of
+    its composition. Whatever process narrowed its reach to "individuals in the field of fine arts and
+    culture," as the premise of this series states, that process was not built into the text's founding
+    intent. It happened afterward, to a text that began by explicitly refusing to be exclusive.
+  </p>
+
+</section>
+
+</main>
+
+<footer class="notes">
+  <h2>Working Bibliography &amp; Notes — Part I</h2>
+  <ol>
+    <li>
+      <strong>Bharata Muni, <em>Nāṭyaśāstra</em>, Adhyāyas 1–8, 35.</strong> Primary source for all
+      Classical Attested material in this module. Verse numbering follows the standard GOS (Gaekwad
+      Oriental Series) edition convention used across this series. Adhyāya 1 supplies the fifth-Veda
+      origin narrative (Section 1); Adhyāya 4 supplies the karaṇa/aṅgahāra/recaka system (Section 4);
+      Adhyāya 6 supplies the rasa-sūtra (Section 2); Adhyāya 7 supplies the sthāyibhāva,
+      vyabhicāribhāva, and sāttvikabhāva enumerations (Sections 2.3 and 6); Adhyāyas 8–14 supply the
+      fourfold abhinaya system (Section 5); Adhyāya 35 supplies the scattered references to
+      teacher-student (ācārya-śiṣya) transmission informing the pedagogy-access distinction in Section
+      1.2. Where a verse is paraphrased rather than quoted in full, this is noted explicitly at point of
+      use, consistent with this platform's copyright and fidelity conventions.
+    </li>
+    <li>
+      <strong>Abhinavagupta, <em>Abhinavabhāratī</em></strong>, commentary on Adhyāya 6 (rasa-sūtra) and
+      Adhyāya 7 (sthāyibhāva/vyabhicāribhāva/sāttvikabhāva). This is the single most load-bearing
+      secondary source in the module: the sahṛdaya doctrine, the sādhāraṇīkaraṇa mechanism as absorbed
+      from Bhaṭṭanāyaka, the aesthetic-distance/camatkāra argument in Section 3.2, and the resolution of
+      the eight-versus-nine rasa debate in Section 2.2 are all drawn from this commentary rather than
+      from Bharata's root text alone, which is characteristically terser on the psychological mechanism
+      of rasa-transmission than on its taxonomy.
+    </li>
+    <li>
+      <strong>Bhaṭṭanāyaka</strong>, sādhāraṇīkaraṇa theory. Bhaṭṭanāyaka's own treatise is non-extant;
+      his position is reconstructed entirely through Abhinavagupta's citation and engagement, which
+      means this module's account of sādhāraṇīkaraṇa carries an additional layer of interpretive
+      mediation worth flagging explicitly — we do not have unmediated access to Bhaṭṭanāyaka's original
+      formulation, only Abhinavagupta's report and development of it.
+    </li>
+    <li>
+      <strong>Kapila Vatsyayan</strong>, <em>Bharata: The Nāṭyaśāstra</em> and related structural studies.
+      Standard modern scholarly framing of the text's overall architecture and the karaṇa system's place
+      within it; informs the combinatorics discussion in Section 4 and the general organizational claims
+      in Section 7.1 regarding the text's śāstra-genre completeness.
+    </li>
+    <li>
+      <strong>Padma Subrahmanyam</strong>, kinetic reconstruction scholarship on the 108 Karaṇas and
+      their temple epigraphic correspondences (Chidambaram, Thanjavur, and related sites). Cross-
+      referenced with Module XI of the 108 Karaṇas series (Structure and Source) on this platform;
+      informs the sample karaṇa glosses in Section 4.4 and the epigraphic-evidence framing of RQ06.
+    </li>
+    <li>
+      <strong>Edwin Gerow</strong> and <strong>Sheldon Pollock</strong>, comparative aesthetics
+      scholarship. Background for the cautionary framing in Section 2.1 against uncritical rasa/basic-
+      emotion equivalence, and for the genre-comparison argument in Section 7.3 situating Nāṭyaśāstra
+      against Arthaśāstra and the Āyurvedic treatises.
+    </li>
+    <li>
+      <strong>Deferred sources, by design.</strong> This module deliberately withholds citation of the
+      modern EQ literature (Goleman's original 1995 formulation, the Salovey-Mayer ability model), the
+      neuroscience literature (mirror neuron theory following Rizzolatti and Gallese, polyvagal theory
+      following Porges), and the dual-process cognitive psychology literature (Kahneman's System 1/
+      System 2 framing, relevant to Section 6.1) — all of that comparative work is reserved for Parts
+      III and IV respectively, to keep Part I's argument strictly internal to the Sanskrit textual
+      tradition and to avoid the premature-equivalence failure mode named explicitly in Section 7.1.
+    </li>
+    <li>
+      <strong>Cross-references within the Cultural Musings platform.</strong> This module assumes
+      familiarity with, but does not reproduce, the four-level vāk doctrine (Parā/Paśyantī/Madhyamā/
+      Vaikharī) established in the Series A foundations (shastrasextentionvak* subdomains) and the
+      40-chapter Vaikharī-to-abhinaya architecture developed in shastrasextvaksix. Readers encountering
+      this module without that background may wish to consult those modules for the linguistic-
+      philosophical scaffolding this doctrinal module deliberately does not re-derive, since the present
+      six-part series' explicit purpose is to treat the emotional/cognitive claim independently of the
+      linguistic claim, with the linguistic dimension reserved for the larger six-series project that
+      follows this one.
+    </li>
+  </ol>
+
+  <h2 style="margin-top:40px;">Glossary of Core Terms — Part I</h2>
+  <table class="compare" style="margin-top:12px;">
+    <tr><th>Term</th><th>Working definition as used in this module</th></tr>
+    <tr><td>Rasa</td><td>Aestheticized, generalized emotional experience arising in the sahṛdaya from the combination of vibhāva, anubhāva, and vyabhicāribhāva; distinct from raw personal emotion.</td></tr>
+    <tr><td>Sthāyibhāva</td><td>A stable, dominant emotional state (eight or nine total) capable of organizing an entire dramatic composition and corresponding to one rasa.</td></tr>
+    <tr><td>Vyabhicāribhāva</td><td>One of thirty-three transitory or ancillary psychophysical states that color and complicate a dominant sthāyibhāva without themselves organizing the whole composition.</td></tr>
+    <tr><td>Vibhāva</td><td>The causal/contextual determinant of an emotion — what in the dramatic situation triggers the state being represented.</td></tr>
+    <tr><td>Anubhāva</td><td>The visible physical/behavioral consequent of an emotion — what the body does once the state is present.</td></tr>
+    <tr><td>Sāttvika bhāva</td><td>Involuntary psychophysical responses (tears, trembling, horripilation, etc.) that signal authentic rather than merely performed emotional absorption.</td></tr>
+    <tr><td>Sahṛdaya</td><td>The spectator whose cultivated aesthetic sensitivity allows rasa to be completed in their own consciousness; the receiving half of the two-body rasa circuit.</td></tr>
+    <tr><td>Sādhāraṇīkaraṇa</td><td>The generalization mechanism by which particular, self-interested emotional content is de-particularized into universally available aesthetic material.</td></tr>
+    <tr><td>Karaṇa</td><td>The minimal combinable dance unit, formed by the conjunction of one hand position and one foot/leg position; 108 are canonically enumerated in Adhyāya 4.</td></tr>
+    <tr><td>Aṅgahāra</td><td>A composed sequence of karaṇas (32 enumerated) linked by recakas, forming the next combinatorial tier above the individual karaṇa.</td></tr>
+    <tr><td>Recaka</td><td>A transitional, non-signifying connecting movement (of foot, waist, hand, or neck) linking karaṇas within an aṅgahāra.</td></tr>
+    <tr><td>Abhinaya</td><td>Dramatic expression/communication generally, formally divided into four channels: āṅgika, vācika, āhārya, sāttvika.</td></tr>
+    <tr><td>Āṅgika</td><td>Bodily expression channel, covering head, eye, neck, brow, hand, and whole-body movement, including the karaṇa system.</td></tr>
+    <tr><td>Vācika</td><td>Verbal/vocal expression channel, covering prosodic delivery, tonal modulation (kāku), and register appropriate to rasa.</td></tr>
+    <tr><td>Āhārya</td><td>Costume, makeup, ornament, and stage-property channel, establishing the contextual frame within which other signals are interpreted.</td></tr>
+    <tr><td>Lokadharmī</td><td>Representation modeled directly on ordinary worldly behavior, as opposed to stylized theatrical convention.</td></tr>
+    <tr><td>Nāṭyadharmī</td><td>Stylized theatrical convention, doctrinally derivative of and answerable to lokadharmī.</td></tr>
+    <tr><td>Camatkāra</td><td>The state of aesthetic relish or wonder produced when rasa is successfully completed in the sahṛdaya.</td></tr>
+    <tr><td>Manas / Buddhi</td><td>Sensory-coordinating mind and discriminative intellect respectively; both required concurrently for successful abhinaya, per Section 6.1's argument.</td></tr>
+  </table>
+
+  <h2 style="margin-top:40px;">Series Roadmap</h2>
+
+  <h3 style="color:var(--gold); font-family:'Cinzel',serif; font-size:17px; margin-top:28px;">Part II — Historical Transmission</h3>
+  <p style="color:var(--parchment-dim); font-size:16px;">
+    Picks up exactly where Section 6 and RQ10 above stop: tracing the specific historical mechanisms —
+    guild (sampradāya) formation and closure, the shift from temple-attached to court-attached
+    patronage and the vulnerability that shift introduced, colonial-era curricular severance and the
+    removal of nāṭya-adjacent material from general educational institutions, and the devadasi abolition
+    movement's complex and unintended effects on hereditary transmission networks — by which a
+    universally-addressed text became guild property confined to fine-arts specialists. Part II will
+    treat the Āyurveda comparison flagged in RQ10 as its opening analytical frame.
+  </p>
+
+  <h3 style="color:var(--gold); font-family:'Cinzel',serif; font-size:17px; margin-top:28px;">Part III — Psychological / EQ Framework</h3>
+  <p style="color:var(--parchment-dim); font-size:16px;">
+    Brings in the modern EQ literature (Salovey-Mayer's ability model, Goleman's mixed model and its
+    self-regulation pillar) directly against the textual material secured in this module — the
+    sthāyibhāva/vyabhicāribhāva taxonomy (RQ02, RQ03), the doṣa/guṇa competency-diagnostic structure
+    (RQ11), and the manas/buddhi dual-process requirement (RQ08) — now that Part I has established what,
+    precisely, each classical term does and does not claim, so the comparison tests genuine convergence
+    rather than imposing modern categories retroactively.
+  </p>
+
+  <h3 style="color:var(--gold); font-family:'Cinzel',serif; font-size:17px; margin-top:28px;">Part IV — Neuroscientific / Somatic</h3>
+  <p style="color:var(--parchment-dim); font-size:16px;">
+    Engages the sāttvika bhāva taxonomy (Section 6, RQ05) against autonomic nervous system and
+    interoception literature, and takes up the aesthetic-distance/sādhāraṇīkaraṇa mechanism (Section 3.2)
+    against mirror-neuron and simulation theories of empathy, testing whether the classical two-body
+    rasa-transmission model (Section 3) has a plausible neural implementation.
+  </p>
+
+  <h3 style="color:var(--gold); font-family:'Cinzel',serif; font-size:17px; margin-top:28px;">Part V — Educational / Pedagogical Loss</h3>
+  <p style="color:var(--parchment-dim); font-size:16px;">
+    Asks why this material is absent from general education specifically, building on Part II's
+    historical account to examine present-day curricular structures, and directly engages the
+    methodological caveat raised in Section 8.3 above about what would be required to test, rather than
+    merely assert, an EQ-curriculum benefit from karaṇa/rasa-based general education.
+  </p>
+
+  <h3 style="color:var(--gold); font-family:'Cinzel',serif; font-size:17px; margin-top:28px;">Part VI — Epistemic Access Barrier</h3>
+  <p style="color:var(--parchment-dim); font-size:16px;">
+    Closes the series by asking what a modern re-democratization would actually require — addressing
+    Sanskrit literacy barriers, guild enclosure, and the specific access mechanisms (translation,
+    digital transmission, general-education integration) that could restore something closer to the
+    fifth-Veda's founding universal-address ambition (Section 1) without collapsing into the
+    premature-equivalence failure mode flagged in Section 7.1.
+  </p>
+
+  <h3 style="color:var(--gold); font-family:'Cinzel',serif; font-size:17px; margin-top:28px;">Beyond This Series</h3>
+  <p style="color:var(--parchment-dim); font-size:16px;">
+    A separate, larger six-series project on the linguistic dimension (vāk-śāstra proper, extending the
+    existing Series A and Series B work on this platform) follows this six-part series as an independent
+    undertaking, picking up the Vaikharī/karaṇa connection flagged but deliberately not developed in
+    Section 8.4 above.
+  </p>
+</footer>
+
+<section id="rq-consolidated" style="max-width:880px; margin:0 auto; padding:60px 24px 140px; border-top:2px solid var(--gold);">
+  <div class="eyebrow" style="text-align:center; font-family:'Cinzel',serif; letter-spacing:.28em; font-size:13px; color:var(--gold); text-transform:uppercase; margin-bottom:14px;">Consolidated Research Register — Part I</div>
+  <h2 style="font-family:'Cinzel', serif; color:var(--gold-bright); font-size:28px; text-align:center; margin:0 0 18px;">
+    Fifteen Research-Oriented Questions Still in the Hunt
+  </h2>
+  <p style="text-align:center; color:var(--parchment-dim); font-style:italic; font-size:17px; max-width:680px; margin:0 auto 46px;">
+    These are the open questions this white paper series is actively pursuing, not settled findings.
+    Each was raised in context earlier in this module; they are gathered here as a single working
+    register so the state of the inquiry is visible at a glance. Status lines reflect where each
+    question stands as of Part I and which forthcoming part of the series is expected to advance it.
+  </p>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 01 — Recognizability Across the Stylization Threshold</div>
+    <p>If nāṭyadharmī is doctrinally derivative of lokadharmī, should karaṇa vocabulary remain partially
+    decodable by untrained observers — does Bharata anywhere imply an audience-side recognizability
+    threshold independent of training?</p>
+    <div class="rq-status">Open. Weighs toward yes per the rasa-sūtra's audience-side mechanism (Section 3), but no verse quantifies a threshold. → Cross-check planned against Abhinavagupta's sahṛdaya doctrine, continuing in Part III.</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 02 — Convergent or Coincidental Taxonomy</div>
+    <p>Does the sthāyibhāva/vyabhicāribhāva distinction reflect an independently derived, empirically
+    grounded taxonomy of human affect, or a compositional convenience that merely resembles one?</p>
+    <div class="rq-status">Open — the central fulcrum question of the entire six-part series. → Direct engagement in Part III against the modern basic-emotion literature.</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 03 — Granularity Against Modern Inventories</div>
+    <p>Does the 33-item vyabhicāribhāva list exceed the resolution of standard modern emotion
+    inventories (Geneva Emotion Wheel, PANAS), and what would that imply about Bharata's observational
+    method?</p>
+    <div class="rq-status">Open. Requires direct lexical comparison. → Planned for Part III.</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 04 — A Shared Generative Grammar for Vāk and Śarīra?</div>
+    <p>Does the combinatorial architecture common to Pāṇinian phonology and the 108-karaṇa system point
+    to one deeper generative theory unifying speech and embodied movement, or is the resemblance a
+    retrospective pattern imposed by the modern analyst?</p>
+    <div class="rq-status">Open — flagged as the highest-risk claim in this module. No explicit textual connection has yet been located. → Reserved for the forthcoming separate six-series project on the linguistic dimension.</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 05 — Does the Text Imply a Causal Physiology?</div>
+    <p>Do the eight sāttvika bhāvas rest on any implicit theory of why emotion produces bodily change, or
+    are they treated purely as descriptive/functional markers?</p>
+    <div class="rq-status">Open. Requires cross-reference against Āyurvedic tridoṣa theory, not explicitly invoked in Adhyāya 7. → Cross-check in Part IV.</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 06 — Curated Protocol or Numerological Target?</div>
+    <p>Is there textual or epigraphic evidence that the 108-karaṇa set was pruned from a larger observed
+    repertoire (a curated communication protocol), versus 108 being a design target filled in by
+    invention?</p>
+    <div class="rq-status">Open. → Cross-check against Module XI (108 Karaṇas: Structure and Source) on this platform.</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 07 — Is the Four-Channel Abhinaya Taxonomy Complete?</div>
+    <p>Does āṅgika/vācika/āhārya/sāttvika exhaustively anticipate modern nonverbal-communication
+    channels, or does the modern division contain a fifth element — proxemics — that āhārya does not
+    clearly separate out?</p>
+    <div class="rq-status">Open. Requires close reading of raṅgapīṭha stage-space conventions (Adhyāya 2) as a possible implicit fifth channel.</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 08 — Does the Manas/Buddhi Model Generalize Beyond Performance?</div>
+    <p>Can the dual requirement of affective absorption plus technical control, neither alone
+    sufficient, be operationalized as a general model of expert performance in domains outside
+    dance-drama — athletics, surgery, oratory?</p>
+    <div class="rq-status">Open. → Reserved for Part III against the modern dual-process (System 1/System 2) literature.</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 09 — Is Modern Empirical Validation Continuous With the Text's Own Method?</div>
+    <p>If the Nāṭyaśāstra's technical core is empirically refined craft-knowledge under a scriptural
+    authority-claim, would modern experimental validation of karaṇa/rasa theory be continuous with the
+    text's own original method, or a category shift the tradition would not recognize as legitimate?</p>
+    <div class="rq-status">Open. Direct practical consequences for the empirical work proposed in Parts III and IV.</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 10 — Why Did Medicine Retain Broader Social Presence?</div>
+    <p>Why did Āyurvedic knowledge stay more broadly transmitted at household level across the centuries
+    while Nāṭyaśāstra-derived knowledge narrowed toward guild specialization, despite both beginning as
+    universalist-scope śāstras?</p>
+    <div class="rq-status">Open — positioned as the opening question for Part II (Historical Transmission).</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 11 — Calibration Faults as a Precedent for Regulation Training</div>
+    <p>Does the doṣa category of over- or under-represented sāttvika bhāva constitute a textual precedent
+    for what modern affective science calls regulation failure, and does the text's ācārya-śiṣya
+    correction model offer a distinct alternative to modern clinical affect-regulation training?</p>
+    <div class="rq-status">Open. → Direct engagement in Part III alongside the self-regulation pillar of modern EQ models.</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 12 — Was Sahṛdaya-Hood Ever a General Population Trait, or Always an Elite One?</div>
+    <p>Abhinavagupta's sahṛdaya requires cultivated aesthetic sensitivity for rasa to complete. Does the
+    text or its commentarial tradition indicate this cultivation was, at any point, expected of a broad
+    general audience rather than an already-refined courtly or scholarly one — and if the latter, was the
+    fifth-Veda's universal-address claim (Section 1) ever actually reconciled in practice with a
+    reception model that presupposes a trained elite spectator?</p>
+    <div class="rq-status">Open. This is the sharpest internal tension the doctrinal module leaves unresolved: a universalist origin claim sitting alongside an apparently elite-contingent completion mechanism. → Central question for Part II's account of how access narrowed.</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 13 — Does Śāstra-Genre Comprehensiveness Predict Later Democratization or Enclosure?</div>
+    <p>Comparing Nāṭyaśāstra's scope-claim against Arthaśāstra's and the Āyurvedic treatises' (Section
+    7.3), is there a textual or structural feature — internal to the śāstras themselves rather than
+    external patronage history — that predicts which comprehensive śāstras stayed broadly transmitted and
+    which narrowed into specialist enclosure?</p>
+    <div class="rq-status">Open. → Comparative treatment planned for Part II.</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 14 — Is the Trailokya Total-Scope Claim Testable in Any Sense, or Purely Rhetorical?</div>
+    <p>Bharata's claim that nāṭya represents the conditions of all three worlds (Section 7.4) is the
+    series' maximal scope claim. Is this claim doing genuine compositional/theoretical work — constraining
+    what the text's taxonomies must cover — or is it conventional śāstric self-elevation with no
+    load-bearing consequence for the technical content?</p>
+    <div class="rq-status">Open. Requires testing whether any documented gap in the taxonomy (an experience type the system cannot represent) would count as evidence against the claim, or whether the claim is unfalsifiable by design.</div>
+  </div>
+
+  <div class="rq-box">
+    <div class="rq-id">RQ 15 — What Would Count as Successful Modern Re-Democratization?</div>
+    <p>Given the pedagogy-versus-reception distinction established in Section 1.2, what specific,
+    checkable criteria would indicate that general human access to karaṇa/rasa knowledge had actually been
+    restored, as opposed to merely made available in principle (a translated text existing online) without
+    being genuinely transmitted into common understanding?</p>
+    <div class="rq-status">Open. → The organizing question for Part VI, closing the series.</div>
+  </div>
+
+</section>
+
+</body>
+</html>
